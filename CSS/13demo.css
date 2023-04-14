@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(69, 62, 62);
+}
+
+.containerA{
+    width: 20%;
+    height:100%;
+    background-color: yellow;
+    position: absolute;
+   border-top-right-radius: 70%;
+   top: 0;
+   left: 0;
+   display: flex;
+}
+
+.img-conatiner img{
+    margin-top: 70px;
+    margin-left: 40px;
+    border-radius: 40px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+.heading-container{
+    position: absolute;
+    width: 40%;
+    left: 40%;
+    top: 30%;
+}
+
+.first{  
+    color: yellow;
+}
+
+.second{
+    color: white;
+    margin-left: 41px;
+}
+
+.paragraph{
+    color: white;
+}
+
+.fonts{
+    color: green;
+}

@@ -1,0 +1,75 @@
+.transition-box1{
+    height:100px;
+    width:100px;
+    background-color: red;
+    transition-property:height;
+    transition-duration: 1s;
+    transition-delay: 2s;
+    transition-timing-function:ease-in;
+    transition-timing-function:ease-out;
+
+}
+
+.transition-box1:hover{
+    height: 300px;
+    width: 100%;
+    background-color: yellow;
+
+}
+
+.transition-box2{
+    height:100px;
+    width:100px;
+    background-color: rgb(0, 217, 255);
+    /* transition-property:height; */
+    transition-duration: 1s;
+    transition-delay: 2s;
+    transition-timing-function:ease-in;
+    transition-timing-function:ease-out;
+    transition-timing-function:ease-in-out;
+}
+
+.transition-box2:hover{
+    height: 600px;
+}
+
+.transition-box3{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+.transition-box3:hover{
+   
+    background-color: rgb(0, 247, 255);
+    transform:rotate(270deg) ;
+    transform:translate(200px, 100px) ;
+    transform:translate(0px, 100px) ;
+    transform:translate(100px, 0px) ;
+}
+
+.zoom-img{
+    height: 200px;
+    width: 300px;
+    border: 3px solid red;
+    overflow: hidden;
+}
+
+.zoom-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.zoom-img img:hover{
+    transform:scale(2.5,2.5) ;
+}
+
+.trsansition-skew{
+    height: 200px;
+    width: 300px;
+    background-color: coral;
+    transform:skew(10deg,20deg);
+}
+
+.trsansition-skew:hover{
+    background-color: blueviolet;
+}

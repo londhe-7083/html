@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> colors in CSS </title>
+        <style>
+            body{
+                background-image: url(./shubh.jpg);
+                background-repeat: no-repeat;
+                height: 70%;
+            }
+            .text-shadow{
+                font-size: 100px;
+                text-shadow: 20px 200px red;
+                text-shadow: 8px 2px red;
+            }
+
+            .box-shadow{
+                height: 100%;
+                width: 100%;
+                background-color: yellow;
+                box-shadow: 5px 5px 5px 10px blue;
+                box-shadow: 5px 5px 5px 10px rgb(0, 255, 153) inset;
+            }
+
+            .color-box{
+                height: 250vh;
+                width: 350vh;
+                float: left;
+                background-color: aqua;
+                background-color:  #ff0008;
+                background-color: #8800ff;
+                background-color: #880957;
+                background-color: rgba(0,255,0,0.3);
+
+            }
+        </style>
+    </head>
+    <body>
+        <h3 class="text-shadow">welcome</h3>
+        <div class="box-shadow"></div>
+        <div class="color-box"></div>
+    </body>
+</html>

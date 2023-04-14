@@ -1,0 +1,30 @@
+.animation-box{
+    height: 400px;
+    width: 400px;
+    float: left;
+    background-color: green;
+    animation-name: de;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+    animation-delay: 3s;
+    animation-timing-function: ease;
+}
+
+@keyframes demo{
+    from{background-color: red;}
+    to{background-color: blue;}
+}
+
+@keyframes de {
+    0%{background-color: green;}
+   10%{background-color: blue;}
+   20%{background-color: green;}
+   30%{background-color: blue;}
+   40%{background-color: green;}
+    50%{background-color: blue;}
+    60%{background-color: green;}    
+    70%{background-color: blue;}    
+    80%{background-color: green;}
+    90%{background-color: blue;}
+   100%{background-color: green;}    
+}

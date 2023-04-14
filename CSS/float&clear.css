@@ -1,0 +1,20 @@
+.float-clear_box1{
+    height: 300px;
+    width: 300px;
+    float: left;
+    float: right;
+    clear: right;
+    /* clear: left; */
+
+    background-color: red;
+
+}
+
+.float-clear_box2{
+    height: 300px;
+    width: 300px;
+    float: left;
+    float: right;
+    /* clear: left; */
+    background-color: yellow;
+}

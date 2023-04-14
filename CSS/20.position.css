@@ -1,0 +1,46 @@
+.position_box1{
+    height: 300px;
+    width: 300px;
+    float: left;
+    background-color:red;
+}
+
+.position_box2{
+    height: 200px;
+    width: 200px;
+    float: left;
+    background-color:green;
+    /* position: relative; */
+    /* position: absolute; */
+    /* position: static; */
+    position: fixed;
+
+}
+
+.main-menu{
+    height: 1000px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.top-menu{
+    height: 100px;
+    width: 100%;
+    float: left;
+    background-color: red;
+}
+
+.top-main-menu{
+    position: sticky;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    float: left;
+    background-color: brown;
+}
+
+.menu-area{
+    height: 1000px;
+    width: 100%;
+    background-image:linear-gradient(red,green,brown) ;
+}

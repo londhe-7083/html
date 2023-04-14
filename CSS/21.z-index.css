@@ -1,0 +1,18 @@
+.zindex-box1{
+    height: 300px;
+    width: 300px;
+    float: left;
+    background-color: aqua;
+}
+.zindex-box2{
+    height: 300px;
+    width: 300px;
+    float: left;
+    background-color:blue;
+}
+.zindex-box3{
+    height: 300px;
+    width: 300px;
+    float: left;
+    background-color:chartreuse;
+}

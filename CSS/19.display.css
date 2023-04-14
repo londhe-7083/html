@@ -1,0 +1,31 @@
+.display_prop{
+    display: none;
+    display: block;
+    display: inline;
+    display: inline-block;
+}
+
+.table_box{
+    height: auto;
+    width: 100px;
+    float: left;
+    display: table;
+}
+
+.table_row{
+    width: 100%;
+    display: table-row;
+}
+
+.table-box{
+    display: table-cell;
+    border: 2px solid red;
+    padding: 40px;
+}
+
+box-4{
+    height: 220px;
+    width: 220px;
+    background-image: linear-gradient(red,pink,blue);
+}
+
