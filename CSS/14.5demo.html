@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>colour circles</title>
+        <style>
+            .bgColor{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:  translate(-50%, -50%);
+                background-color: var(--a);
+                width: inherit;
+                height: inherit;
+                clip-path: circle(0% at 50% 50%);
+            }
+
+            .bgColor:nth-child(1) {
+                background-color: var(--a);
+                transform: translate(-50%, -50%) scale(1);
+                animation: anim 05s 1s linear forwards;
+            }
+            .bgColor:nth-child(2) {
+                background-color: var(--a);
+                transform: translate(-50%, -50%) scale(0.8);
+                animation: anim 05s 1s linear forwards;
+            }
+            .bgColor:nth-child(3) {
+                background-color: var(--a);
+                transform: translate(-50%, -50%) scale(0.7);
+                animation: anim 05s 1s linear forwards;
+            }
+            .bgColor:nth-child(4) {
+                background-color: var(--a);
+                transform: translate(-50%, -50%) scale(0.4);
+                animation: anim 05s 1s linear forwards;
+            }
+            .bgColor:nth-child(5) {
+                background-color: var(--a);
+                transform: translate(-50%, -50%) scale(0.3);
+                animation: anim 05s 1s linear forwards;
+            }
+            .bgColor:nth-child(6) {
+                background-color: var(--a);
+                transform: translate(-50%, -50%) scale(1);
+                animation: anim 05s 1s linear forwards;
+            }
+
+            @keyframes anim{
+                to{
+                    clip-path: circle(100% at 50% 50%);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+            <div class="bgColor"></div>
+        </div>
+    </body>
+</html>

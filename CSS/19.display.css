@@ -7,7 +7,7 @@
 
 .table_box{
     height: auto;
-    width: 100px;
+    width: 100%;
     float: left;
     display: table;
 }
@@ -17,15 +17,15 @@
     display: table-row;
 }
 
-.table-box{
+.table-cell{
     display: table-cell;
-    border: 2px solid red;
-    padding: 40px;
+    border: 1px solid red;
+    text-align: center  ;
 }
 
-box-4{
+/* box-4{
     height: 220px;
     width: 220px;
     background-image: linear-gradient(red,pink,blue);
-}
+} */
 

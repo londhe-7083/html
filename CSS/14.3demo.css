@@ -1,0 +1,17 @@
+body{
+    background-image: url(./airoplane-highwayb.jpg);
+    background-repeat: no-repeat;
+}
+.bike{
+    position: absolute;
+    left: 10px;
+    left: 0px;
+    top: 30vw;
+    animation-duration: 20s;
+    animation-name: cycleman;
+}
+
+@keyframes cycleman{
+    0%{top:30vw; left:0%;}
+    100%{top:30vw; left:100%;}
+}

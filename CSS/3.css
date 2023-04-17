@@ -1,0 +1,72 @@
+.a1{
+    width: 10%;
+    height:150px;
+    background-color:yellow;
+    border:10px groove red;
+    border-top-right-radius:30px;
+    float: left;
+    box-sizing:border-box;
+}
+.a2{
+    width: 10%;
+    height: 150px;
+    background-color: yellow;
+    border:10px groove red;
+    border-top-left-radius:30px;
+    float:left;
+    box-sizing:border-box;
+}
+.a3{
+    width: 10%;
+    height: 150px;
+    background-color: yellow;
+    border:10px groove red;
+    border-bottom-right-radius:30px;
+    float:left;
+    box-sizing:border-box;
+}
+.a4{
+    width: 10%;
+    height: 150px;
+    background-color: yellow;
+    border:10px groove red;
+    border-bottom-left-radius:30px;
+    float:left;
+    box-sizing:border-box;
+}
+.v{
+    width: 10%;
+    height: 150px;
+    background-color: blue;
+    border:10px groove red;
+    border-bottom-right-radius:50%;
+    float:left;
+    box-sizing:border-box;
+}
+.p{
+    width: 10%;
+    height: 150px;
+    background-color:blue;
+    border:10px groove red;
+    border-bottom-left-radius:50%;
+    float:left;
+    box-sizing:border-box;
+}
+.vp{
+    width: 10%;
+    height: 150px;
+    background-color: blue;
+    border:10px groove red;
+    border-top-right-radius:50%;
+    float:left;
+    box-sizing:border-box;
+}
+.pv{
+    width: 10%;
+    height: 150px;
+    background-color:blue;
+    border:10px groove red;
+    border-top-left-radius:50%;
+    float:left;
+    box-sizing:border-box;
+}

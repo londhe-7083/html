@@ -3,31 +3,34 @@
     background-repeat: no-repeat;
     margin-left: 50vw ;
     margin-top: 90px;
+    display: inline-block;
+}
+
+.image{
+    position: relative;  
+    height: 20%;
+    width: 20%;
+    /* top: -303px; */
 }
 
 .contierA{
-    background-image: url(./pokemon2.png);
-    width: 58px;
-    height: 330px;
-    animation:walk 1s steps(8) infinite,
-                forward 5s linear infinite;
+    position: absolute;
+    animation-duration: 10s;
+    animation-name: pokemon;
+    display: inline-block;
 }
 
-@keyframes walk{
-    0%{
-        background-position: 0px;
-    }
-    100%{
-        background-position: 3000px;
-    }
+@keyframes pokemon{
+    0%{top:30vw; left:40%}
+    5%{top:22vw; left:40%}
+    25%{top:23vw; left:50%}
+    30%{top:15vw; left:50%}
+    50%{top:14vw; left:50%}
+    55%{top:17vw; left:60%}
+    60%{top:9vw; left:60%}
+    70%{top:11vw; left:70%}
+    75%{top:11vw; left:70%}
+    85%{top:3vw; left:70%}
+    90%{top:3vw; left:80%}
 }
 
-@keyframes forward{
-    0%{
-        transform:translate(-100px);
-    }
-
-    100%{
-        transform: translate(1200px);
-    }
-}

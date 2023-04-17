@@ -1,0 +1,21 @@
+.vp{
+    height: 720px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: yellow;
+    border: 5px solid black;
+    border-top: none    ;
+}
+.pv{
+    border: 5px blue solid;
+    height: 80%;
+    width: 20%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 2px; */
+}
