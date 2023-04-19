@@ -30,15 +30,33 @@ body{
 
 .first{  
     color: yellow;
+    font-style:revert;
+    font-size: 40px;
 }
 
 .second{
     color: white;
+    font-style:revert;
     margin-left: 41px;
+    font-size: 40px;
 }
 
 .paragraph{
     color: white;
+    line-height: 1.5;
+}
+
+button{
+    padding: 7px;
+    width: 35vh;
+    border-radius: 20%;
+}
+
+.arrow{
+    margin-left: 115px;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .fonts{
