@@ -75,68 +75,95 @@ float: left;
     color: white;
 }
 
-@media(max-width:667px) {
-    .top-menu-logo{
-        display:none;
-    }
 
-    .top-menu{
-        height: 80px;
-    }
-
-    .top-menu-contact{
-        width: 100%;
-        height: 20px;   
-    }
-
-    .top-menu-contact ul{
-        text-align: center;
-    }
-    
-    .top-menu-icon{
-        width: 100% ;
-    }
-
-    .top-menu-icon ul li{
-        margin-top: 19px;
-    }
+.main-menu{
+    height: 90px;
+    width:100%;
+    float:left;
+    background-color:#e9dbc8;
 }
 
-    .main-menu{
-        height: 100px;
-        width:100%;
-        float:left;
-        background-color: #e9dbc8;
-    }
-    
-   .main-menu-logo{
+.main-menu-logo{
     height: 100%;
     width: 30%;
     float: left;
-   }
+}
 
-   .main-menu-option{
+.main-menu-option{
     height: 100%;
     width: 70%;
     float: left;
-   }
+}
 
-   .main-menu-option ul{
+.main-menu-option ul{
     height: 100%;
     width: 100%;
     float: left;
-   }
+}
 
-   .main-menu-option ul li{
+.main-menu-option ul li{
     display: inline-block;
     padding: 10px;
     width: 70px;
     margin-top: 10px;
-   }
+}
 
-   .main-menu-option ul li a{
+.main-menu-option ul li a{
     color: black;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-   }
+}
+
+.main-menu-logo img{
+    display: none;
+}
+
+
+    @media(max-width:767px) {
+        .top-menu-logo{
+            display:none;
+        }
+    
+        .top-menu{
+            height: 80px;
+        }
+    
+        .top-menu-contact{
+            width: 100%;
+            height: 20px;   
+        }
+    
+        .top-menu-contact ul{
+            text-align: center;
+        }
+    
+        .top-menu-contact ul li{
+            font-size: 17px;
+        }
+        
+        .top-menu-icon{
+            width: 100%;
+            height: 76%;
+        }
+    
+        .top-menu-icon ul li{
+            margin-top: 19px;
+            height: 29px;
+            width: 29px;
+        }
+    }
+   
+    @media(max-width:667px){
+        .main-menu-logo img{
+            display: inline-block;
+        }
+
+        .main-menu{
+            background-color: #e74c14;
+        }
+
+        .main-menu-option{
+            display: none;
+        }
+    }

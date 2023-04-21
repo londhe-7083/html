@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container{
+    width:100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+}
+
+.containerA{
+    width: 60%;
+    height: 610px;
+    display: inline-block;
+    border: 6px solid red;
+}
+ 
+.logo{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    font-style: bold;
+    background-color: rgb(86, 212, 54);
+    margin-left: 27vw;
+}
+
+.icon{
+   float: right;
+   margin: 8px;
+   position: relative;
+}
+
+.unpin-container{
+    display: flex;
+    align-items: end;
+    margin-top: 15vw;
+    padding: 10px;
+    display: inline-block;
+}
+
+h3{
+    display: inline-block;
+    color: white;
+    padding: 7px;
+}
+
+.containerB{
+    width: 40%;
+    height: 620px;
+    display: inline-block;
+}
+
+.students{
+    height: 15vw;
+    width: 15vw;
+    background-color: rgba(38, 39, 37, 0.946);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.logoA{
+    font-size: 80px; 
+    font-style: bold;
+    background-color: rgb(86, 212, 54);
+    display: flex;
+    justify-content: center; 
+    border-radius: 157%;  
+    width: 50px;
+    height: 50px;
+
+}
+
+.logo-main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -26px;
+
+}
