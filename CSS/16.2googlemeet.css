@@ -22,12 +22,17 @@
     display: flex;
     justify-content: center;
     margin-top: 230px;
+    font-style: bold;
+    color: white;
+    position: relative;
+}
+
+.logo-div{    
+    background-color: rgb(86, 212, 54);
     border-radius: 50%;
     width: 115px;
-    height: 115px;
-    font-style: bold;
-    background-color: rgb(86, 212, 54);
     margin-left: 27vw;
+    height: 115px;
 }
 
 .icon{
@@ -54,14 +59,33 @@ h3{
     width: 40%;
     height: 620px;
     display: inline-block;
+    margin: 8px;
 }
 
-.students{
-    height: 15vw;
-    width: 15vw;
+.studentsA{
+    display: flex;
+}
+.studentsB{
+    display: flex;
+}
+.studentsC{
+    display: flex;
+}
+
+
+.st1{
     background-color: rgba(38, 39, 37, 0.946);
     border-radius: 20px;
     margin: 10px;
+    height: 13vw;
+    width: 45%;
+}
+.st2{
+    background-color: rgba(38, 39, 37, 0.946);
+    border-radius: 20px;
+    margin: 10px;
+    height: 13vw;
+    width: 45%;
 }
 
 .logoA{
@@ -73,6 +97,9 @@ h3{
     border-radius: 157%;  
     width: 50px;
     height: 50px;
+    position: relative;
+    top: 66px;
+    margin-left: 7vw;
 
 }
 
