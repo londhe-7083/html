@@ -103,9 +103,8 @@ float: left;
 
 .main-menu-option ul li{
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
     width: 70px;
-    margin-top: 8px;
 }
 
 .main-menu-option ul li :hover{
@@ -117,6 +116,11 @@ float: left;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+}
+
+.Home{
+  background-color: #e74c14;
+  padding: 20px;
 }
 
 .main-menu-logo img{
@@ -132,7 +136,7 @@ float: left;
 }
 
 .slider-area{
-    height: 600px;
+    height: 700px;
     width: 100%;
     float: left;
     background-image: url("https://gloxy-react.envytheme.com/static/slide-bg-1-d528d449d91932aed63336d59b9439c9.jpg");
@@ -171,25 +175,6 @@ float: left;
     border-radius: 5px;
 }
 
- .why-choose-box{
-    height: 100%;
-    width: 30%;
-    float: left;
-    background-color: purple;
- }
-
- .why-choose{
-    height: 300px;
-    width: 80%;
-    float: left;
-    margin-left: 10%;
-    margin-top: -100px;
- }
-
- .why-margin{
-    margin-left: 5%;
-    margin-right:5%
- }
 
     @media(max-width:767px) {
         .top-menu-logo{
@@ -280,3 +265,186 @@ float: left;
 
 
    }
+   
+
+ .why-choose-box{
+    height: 100%;
+    width: 30%;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: white;
+ }
+
+ .why-choose{
+    height: 300px;
+    width: 80%;
+    float: left;
+    margin-left: 10%;
+    margin-top: -100px;
+ }
+
+ .why-choose-box i{
+    font-size: 80px;
+    color: #e74c14;
+    margin-top: 20px;
+ }
+
+ .why-margin{
+    margin-left: 5%;
+    margin-right:5%
+ }
+
+ .why-choose-box h2{
+    margin-top: 20px;
+    /* color: white; */
+    /* font-size: 25px; */
+ }
+
+ .why-choose-box p{
+    line-height: 1.7;
+    font-weight: 20px;
+    margin-top: 20px;
+ }
+
+ .why-choose .active{
+    background-color: #e74c14;
+ }
+
+ .why-choose .active i{
+    color: white;
+ }
+
+ .why-choose .active h2{
+    color: white;
+ }
+
+ .why-choose .active p{
+    color: white;
+ }
+
+ .why-choose-box:hover{
+    background-color: #e74c14;
+    color: white;
+ }
+
+ .why-choose-box:hover i{
+    color: white  !important;
+ }
+
+ .why-choose-box:hover h2{
+color: white !important;
+ }
+
+ .why-choose-box:hover p{
+    color: white !important;
+ }
+
+
+   @media(max-width:667px){
+
+    .why-choose{
+        margin-top:20px;
+        height: auto;
+    }
+
+    .why-choose-box{
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .why-choose-box p{
+        line-height: 1.4;
+        margin-top: 10px;
+    }
+
+    .why-margin{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .why-choose-box i{
+        font-size: 60px;
+    }
+   }
+
+   .service{
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+}
+
+.service-title{
+    margin-top: 15vw;
+    height: 150px;
+    width: 100%;
+    float: left;
+    
+}
+
+.service-title p{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    line-height: 1.5;
+    font-size: 17;
+}
+
+.service-title h1{
+    text-align: center;
+    font-size: 50;
+    line-height: 1.5;
+    font-style: bold;
+}
+
+.service-boxes{
+    height: 150px;
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+}
+
+.service-box{
+    margin-left: 10%;
+}
+
+.service-boxA{
+    height: 20vw;
+    width: 30%;
+    float: left;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    margin: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.user{
+    height: 5vw;
+    width: 5vw;
+    margin-top: 18px;
+}
+
+.boxA-heading{
+    margin-top: 20px;
+}
+
+.boxA-paragraph{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.image{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 0px black;
+    margin-top: 20px;
+
+}
