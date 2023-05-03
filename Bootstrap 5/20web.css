@@ -1,0 +1,24 @@
+.logo{
+    height: 60px;
+}
+
+carousel-item img{
+    height: 500px;
+}
+
+.about-img{
+    height: 350px;
+}
+
+@media(max-widht:667px){
+    carousel-item img{
+        height: 350px;
+    }
+ }
+
+ @media(max-width:667px){
+    .about-img{
+        height: 250px;
+    }
+}
+    
