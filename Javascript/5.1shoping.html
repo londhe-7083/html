@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoping discount</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var ttlamt=prompt("total shoping Amount");
+        var dis=0;
+        if(ttlamt>=10000 && ttlamt<=15000)
+        {
+            dis=15;
+        }
+        else if(ttlamt>15000 && ttlamt<=20000)
+        {
+            dis=20;
+        }
+        else if(ttlamt>20000 && ttlamt<=25000)
+        {
+            dis=25;
+        }
+        else if(ttlamt>25000)
+        {
+            dis=30;
+        }
+
+        disamount=ttlamt*dis/100;
+        payamount=ttlamt-disamount;
+        document.write("total shoping amount= "+ttlamt+"<br>");
+        document.write("discount got on this amount="+dis+"%"+"<br>");
+        document.write("discount got amount=" +disamount+"<br>");
+          document.write("final paying amount = "+payamount);
+
+    </script>
+</body>
+</html>

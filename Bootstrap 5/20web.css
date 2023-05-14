@@ -3,6 +3,12 @@
   color: white !important;
 }
 
+@media(max-width:667px){
+    .buttonn{
+        display: none;
+    }
+}
+
 .logo{
     height: 60px;
 }
@@ -26,6 +32,12 @@ carousel-item img{
         height: 250px;
     }
 }
+
+@media(max-width:667px){
+    .contact-form{
+        margin: auto;
+    }
+}
   
 .gallery-img{
     height: 200px;
@@ -47,3 +59,11 @@ carousel-item img{
     margin-top: 14px;
 }
 
+.image {
+    height: 23vw;
+    width: 60%;
+}
+
+.gig{
+    display: flex;
+}
