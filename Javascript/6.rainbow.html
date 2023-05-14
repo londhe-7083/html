@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="height:100px; width:100vw;" id="shiv"></div>
+
+
+    <script type="text/javascript">
+       let a = prompt("rainbow color"); 
+
+       switch(a)
+       {
+        case 'red':
+           Text =`<div style="background-color:red; height:100px; width:100%" ></div>`;
+           break;
+
+        case 'orange':
+           Text = `<div style="background-color:orange;"></div>`;
+           break;
+
+        case 'yellow':
+           Text = `<div style="background-color:yellow;"></div>`;
+           break;
+
+        case 'green':
+           Text = `<div style="background-color:green;"></div>`;
+           break;
+
+        case 'blue':
+           Text = `<div style="background-color:blue;"></div>`;
+           break;
+
+        case 'indigo':
+           Text = `<div style="background-color:indigo;"></div>`;
+           break;
+
+        case 'violet':
+           Text = `<div style="background-color:violet;"></div>`;
+           break;
+       }
+
+       document.getElementById("shiv").innerHTML = Text;
+
+    </script>
+</body>
+</html>
