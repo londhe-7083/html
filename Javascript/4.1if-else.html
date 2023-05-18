@@ -8,7 +8,7 @@
 </head>
 <body>
     <script type="text/javascript">
-        var num = number(prompt("enter your bill value"));
+        var num = prompt("enter your bill value");
         if(num<10000)
         {
             document.write("you have got 10% discount")
@@ -28,7 +28,85 @@
         {
             document.write()
         }
-    </script>
+        </script>
+            
+            <script type="text/javascript">
 
+            var age=19;
+            if (age==18){
+                document.write("<br>Eli");
+            }
+
+            if(age<18)
+            {
+                document.write("<br> not eli");
+            }
+
+
+            var shop=6000;
+            var dis=0;
+            if (shop>=5000){
+                dis=10;
+            }
+            var disamt=shop*dis/100;
+            var totamt  =shop-disamt;
+            document.write("<br>total="+shop)
+            document.write("<br> total Dis="+disamt)
+            document.write("<br> total amt="+totamt)
+            
+
+            var a=10;
+            var b=50;
+            if(a>b){
+                document.write("<br> A is big")
+            }
+
+
+            else{
+                document.write("<br> b is big");
+            }
+
+
+
+            </script>
+            <script>
+
+                var a=100;
+                var b=110;
+                if(a==b){
+                    document.write("<br> <br> same");
+                }
+
+                else{
+                    document.write("<br> <br>  Not same")
+                }
+
+
+                var a=10;
+                var b=50;
+                if(a>b){
+                    document.write("<br> <br> A is big")
+                }
+
+                else{
+                    document.write("<br> B is a big");
+
+                }
+
+                var s1=50;
+                var s2=20;
+                var s3=50;
+                var s4=50;
+                var s5=50;
+                var s6=50;
+
+                if(s1>=35 && s2>=35 && s3>=35 && s4>=35 && s5>=35 && s6>=35){
+                    document.write("<br>Pass")
+                }
+
+                else{
+                    document.write("<br>Fail")
+                }
+            </script>
 </body>
 </html>

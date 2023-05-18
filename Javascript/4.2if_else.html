@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var shop = 22000;
+        var dis =0;
+        if(shop>=5000 && shop<=10000){
+            dis=10
+        }
+
+        else if(shop>10000 && shop<=15000){
+            dis=15;
+        }
+
+        else if(shop>15000 && shop<=20000){
+            dis=20;
+        }
+
+        else if(shop>20000){
+            dis=30;
+        }
+
+        else{
+            dis=0;
+        }
+
+        var disamt=shop*dis/100;
+        var totamt=shop-disamt;
+        document.write("<br>Total Shop="+shop)
+        document.write("<br>Total Dis="+disamt)
+        document.write("<br>Total amt="+totamt)
+
+    </script>
+</body>
+</html>
