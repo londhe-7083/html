@@ -10,19 +10,29 @@
 </head>
 <body>
 
-    <!-- enternal js -->
+    <!-- external js -->
     <script type="text/javscript"  src="demo.js"></script>
 
     <!-- internal js -->
     <script type="text/javscript"> 
         var a=10;
-        document.write(a);
     </script>
-
+    
+    <!-- document.write(a); -->
     <!-- inline javscript -->
     <button onclick="alert(h1)">Click</button>
 
+    <script type="text/javascript">
 
+        var b=50;
+        document.write(Math.sqrt(b));
+
+        var c= prompt("kilomiters");
+        const factor= 0.621371;
+        const miles = kilometers*factor;
+        document.write("<br> ");
+        console.log('${kilometers} kilometersis equal to ${miles}miles');
+    </script>
     
 </body>
 </html>
