@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-weight: bold;"> Numbers 1-100 </h1>
+    <table border="2" width="100%" style="text-align: center; background-color: rgba(127, 255, 212, 0.551); font-weight: bold;">
+        <script type="text/javascript">
+            var d = 1;
+            while(d<=10){
+                var a = d;
+                var c = 100;
+                document.write("<tr>")
+                    while (a <= c) {
+                        document.write("<td>"+a+"</td>");
+                        a += 10;
+                    }
+                    document.write("</tr>")
+                    d++;
+                    c++;
+                }
+
+        </script>
+    </table>
+</body>
+</html>
