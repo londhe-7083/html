@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student</title>
+</head>
+<body>
+    <script>
+        var rec={
+            "student1":{"name":"rahul"},
+            "student2":{"name":"shubham"},
+            "student3":{"name":"aniket"},
+            "student4":{"name":"ram"},
+            "student5":{"name":"siddhi"},
+            "student6":{"name":"sk"},
+            "student7":{"name":"anni"},
+        }
+
+        for(key in rec){
+            document.write("<br>"+key);
+            document.write(":"+rec[key].name);
+        }
+    </script>
+</body>
+</html>

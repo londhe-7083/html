@@ -7,15 +7,59 @@
     <title>function types</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         //paramiterize function
         function wel(arg,arg1){
-            alert("welcome" +arg);
+            alert("welcome " +arg1);
         }
 
-        wel("shamn","sham");
-        wel("rasm","ram");
+        wel("sham","shubh");
+        wel("ram","seeta");
+    </script> -->
+        <input type="text" id="val1"> <br>
+        <input type="text" id="val2"> <br>
+        <button onclick="cal()">+</button><br>
+        <input type="text" id="tot"> <br> 
+
+        <script>
+            function cal(a,b)
+            {
+                var cd = Number(a) + Number(b);
+                // return cd;
+                document.write(cd);
+                // document.getElementById('tot').value=cd;
+                var a=document.getElementById('val1').value;
+                var b=document.getElementById('val2').value;
+            }
+
+
+
+            cal(a,b);
+            // document.getElementById("value" +bbc);
+
+        </script>
+
+    <script>
+        // function cal(a,b){
+        //     var c = a+b;
+        //     alert(c);
+        // }
+
+        // cal(12,23);
+
+
+        // var a= prompt("enter a value");  
+
+    //     function cal(aa,bb){
+    //        var c = Number(aa)+Number(bb);
+    //        return c;
+    //     }
+        
+    //     var d= prompt("hello friends");  
+    //     var g= prompt("jai shri ram");  
+    //    document.write (cal(d,g));
+
+        
     </script>
-    
 </body>
 </html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in table</title>
+</head>
+
+<body>
+    <h1 style="text-align:center">Smartphones table</h1>
+    <table border="1" width="100%" style="text-align: center; padding: 10px;" >
+    <script>
+        var prod = {
+            "products1":
+            {
+                "id": 1,
+                "title": "iPhone 9",
+                "description": "An apple mobile which is nothing like apple",
+                "price": 35000,
+                "discountPercentage": 20.86,
+                "rating": 6.69,
+                "stock": 24,
+                "brand": "Apple",
+                "category": "smartphones",
+                "thumbnail": "...",
+                "images": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1679650002.01092930!500x500.png"
+
+            },
+            "products2":
+            {
+                "id": 2,
+                "title": "iPhone 10a",
+                "description": "An apple mobile which is nothing like apple",
+                "price": 54900,
+                "discountPercentage": 25.96,
+                "rating": 3.9,
+                "stock": 33,
+                "brand": "Apple",
+                "category": "smartphones",
+                "thumbnail": "...",
+                "images": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1679650002.01092930!500x500.png"
+            },
+            "products3":
+            {
+                "id": 3,
+                "title": "iPhone 11",
+                "description": "An apple mobile which is nothing like apple",
+                "price": 44900,
+                "discountPercentage": 15.96,
+                "rating": 2.66,
+                "stock": 32,
+                "brand": "Apple",
+                "category": "smartphones",
+                "thumbnail": "...",
+                "images": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1679650002.01092930!500x500.png"
+            },
+            "products4":
+            {
+                "id": 4,
+                "title": "iPhone 11a",
+                "description": "An apple mobile which is nothing like apple",
+                "price": 90000,
+                "discountPercentage": 11.96,
+                "rating": 2.90,
+                "stock": 40,
+                "brand": "Apple",
+                "category": "smartphones",
+                "thumbnail": "...",
+                "images": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1679650002.01092930!500x500.png"
+            },
+            "products5":
+            {
+                "id": 5,
+                "title": "iPhone 12",
+                "description": "An apple mobile which is nothing like apple",
+                "price": 32000,
+                "discountPercentage": 10.5,
+                "rating": 5.89,
+                "stock": 34,
+                "brand": "Apple",
+                "category": "smartphones",
+                "thumbnail": "...",
+                "images": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1679650002.01092930!500x500.png"
+            },
+            "products6":
+            {
+                "id": 6,
+                "title": "iPhone 12a",
+                "description": "An apple mobile which is nothing like apple",
+                "price": 32500,
+                "discountPercentage": 14.96,
+                "rating": 6.25,
+                "stock": 24,
+                "brand": "Apple",
+                "category": "smartphones",
+                "thumbnail": "...",
+                "images": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1679650002.01092930!500x500.png"
+            }
+        }
+       
+       
+        // for(key in prod){
+        //     document.write("<tr>");
+        //     document.write("<td>"+prod[key].id+"<td>");
+        //     document.write("<td>"+key+"<td>");
+        //     document.write("<td>"+prod[key].title+"<td>");
+        //     document.write("<td>"+prod[key].description+"<td>");
+        //     document.write("<td>"+prod[key].price+"<td>");
+        //     document.write("<td>"+prod[key].discountPercentage+"<td>");
+        //     document.write("<td>"+prod[key].rating+"<td>");
+        //     document.write("<td>"+prod[key].stock+"<td>");
+        //     document.write("<td>"+prod[key].brand+"<td>");
+        //     document.write("<td>"+prod[key].category+"<td>");
+        //     document.write("<td>"+prod[key].thumbnail+"<td>");
+        //     document.write("<td>"+prod[key].images+"<td>");
+
+        //         document.write("</tr>")
+          //  }
+
+          console.log(prod);
+          document.write("<table border='1' width='100%'>"n  );
+            for(key in prod){
+                document.write("<tr>");
+                for(key1 in prod[key]){
+                   if(key1=='images'){
+                    document.write("<td><img src='"+prod[key][key1]+"' width='100px'></td>")
+                   }
+                   else{
+                    document.write("<td>" +prod[key][key1]+"</td>");
+                   }
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+
+
+    </script>
+    </table>
+</body>
+
+</html>
