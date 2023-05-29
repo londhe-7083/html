@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p class="demo">Welcome1</p>
+<p class="demo1">Welcome2</p>
+<p class="demo">Welcome3</p>
+<p class="demo">Welcome4</p>
+<p class="demo1">Welcome5</p>
+<p class="demo1">Welcome6</p>
+<p class="demo">Welcome7</p>
+<body>
+    <script>
+        var a=document.getElementsByClassName('demo');
+        console.log(a[3].innerHTML);
+
+        for(var i=0; i<4; i++){
+            console.log(a[i].innerHTML);
+        }
+        
+        document.getElementsByClassName('demo')[3].innerHTML="change";
+    </script>
+    
+</body>
+</html>
