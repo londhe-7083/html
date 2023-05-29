@@ -9,10 +9,11 @@
 </head>
 
 <body>
+    <table border="2" width="100%">
     <script>
-        var prod = [ 
+        var prod = [
 
-        {
+            {
                 "id": 1,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
@@ -98,20 +99,36 @@
             }
         ]
 
-            // document.write(prod);{ 
-   console.log(prod.length);
-                for(var a=0; a<=prod.length; a++){
-                    document.write(prod[a] +"<br>"); 
+        // document.write(prod);{ 
+        //    console.log(prod.length);
+
+        document.write("<tr>");
+        for (var a = 0; a <= prod.length; a++) {
+            document.write("<td>"+prod[a].id+"</td>"
+             + " "+"<td>"+ prod[a].title+"<td>"+
+                "<td>"+ prod[a].description+
+                    "</td>" +"<td>"+ prod[a].price +
+                        "</td>" +"<td>"+ prod[a].discountPercentage +
+                            "</td>" +"<td>"+ prod[a].rating+"</td>"
+                              +"<td>"+ prod[a].stock +"</td>" +
+                              "<td>"+ prod[a].brand +"</td>"
+                               +"<td>"+ prod[a].category+"</td>" 
+                               +"<td>"+ prod[a].thumbnail +"</td>"
+                                // +"<td>"+ prod[a].images +"</td>" +"<br>");
+                              +"<td><img src='"+prod[a].images+"' width='100px'></td>");
+
             // for(key in prod){
-            //     for(key in prod[key]){ 
-            // // document.write("<br>" +key);
+            // document.write("<br>" +key);
+            // for(key in prod[key]){ 
             // document.write(":" +prod[key])
+            document.write("</tr>");
+        }
+
             // }
-            }
-            
+
 
     </script>
-
+</table>
 </body>
 
 </html>
