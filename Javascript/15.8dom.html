@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <style>
+        .demo{
+            background-color: black;
+        }
+
+        .demo11{
+            background-color: orange;
+        }
+
+    </style>
+    <p id="da2" class="demo demo1 demo2" style="color:red">welcome</p>
+    <script>
+        var a=document.getElementById('da2').getAttribute('id');
+        console.log(a);
+        document.getElementById('da2').setAttribute('class','demo11')
+    </script>
+</body>
+</html>
