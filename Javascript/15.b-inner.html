@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner html</title>
+</head>
+<body>
+    <h1 id="data"><mark>welcome</mark></h1>
+    <h1 id="data1">JS</h1>
+    <script>
+        // get
+
+        var a=document.getElementById('data').innerHTML;
+        var b=document.getElementById('data1').innerHTML;
+        console.log(a);
+
+        //set
+
+        document.getElementById('data').innerHTML=b;
+        document.getElementById('data1').innerHTML=a;
+    </script>
+    <!-- <style>
+    .demo{ height: 200px; width: 200px; background-color:red;}
+    .demo1{ height: 200px; width: 200px; background-color:orange;}
+        </style> -->
+    <h2 id="dat1"><mark>life partner</mark></h2>
+    <h2 id="dat2"></h2>
+    <script>
+        var ab=document.getElementById('dat1').innerText;
+        console.log(ab);
+
+        document.getElementById('dat2').innerText="<mark>life</mark>"
+        
+    </script>
+</body>
+</html>

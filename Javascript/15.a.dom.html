@@ -18,14 +18,19 @@
         <div id="da" class="demo"></div>
         <button onclick="add1()">Add</button>
         <button onclick="remove1()">remove</button>
+        <button onclick="tog1()">toggle</button>
     <script>
-        function add(){
+        function add1(){
             document.getElementById('da').classList.add('demo1');
 
         }
 
         function remove1(){
             document.getElementById('da').classList.remove('demo1');
+        }
+
+        function tog1(){
+            document.getElementById('da').classList.toggle('demo1');
         }
 
     </script>
