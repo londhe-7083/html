@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+</head>
+<body>
+    <form onsubmit="return confirm('Are U Sure') ">
+        <label>Name:</label>
+        <input type="text" id="name" onfocus="focus1('name')" onblur="blur1('name')" onselect="select1()"><br><br>
+        <label>Email</label>
+        <input type="email" id="email" onfocus="focus1('email')" onblur="('email')"><br><br>
+        <label>Mobile</label>
+        <input type="number" id="mobile" onfocus="focus1('mobile')" onblur="blur1('mobile')"><br><br>
+        <label>Subject</label>
+        <select id="sub">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+        </select><br><br>
+    </form>
+    <script>
+        function chang(){
+            document.getElementById('sub').style="background-color:red"
+        }
+
+        function focus1(para){
+            document.getElementById(para).style="background:yellow";
+        }
+
+        function blur1(pa){
+            document.getElementById(pa).style="background"
+        }
+    </script>
+    
+</body>
+</html>

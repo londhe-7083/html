@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfocus</title>
+</head>
+<body>
+    <form>
+        <label>Name:</label>
+        <input type="text" id="name" onfocus="focus1()"><br><br>
+        <label>Email:</label>
+        <input type="text" id="email" onfocus="focus2()"><br><br>
+        <label>mobile:</label>
+        <input type="text" id="mobile" onfocus="focus3()"><br><br>
+        <label>Subject:</label>
+        <select id="sub">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+        </select><br><br>
+    </form>
+    <script>
+        function focus1(){
+            document.getElementById('name').style="background:yellow";
+        }
+
+        function focus2(){
+            document.getElementById('email').style="background:yellow";
+        }
+
+        function focus3(){
+            document.getElementById('mobile').style="background:yellow";
+        }
+    </script>
+    
+</body>
+</html>

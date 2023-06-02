@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onkeyup</title>
+</head>
+<body>
+
+    <input type="text" id="val1" placeholder="prod-rate" onkeyup="cal()"><br><br>
+    
+    <input type="text" id="val2" placeholder="prod-qnt" onkeyup="cal()"><br><br>
+    <input type="text" id="tot" placeholder="tot">
+
+    <script>
+        function cal(){
+            var a=document.getElementById('val1').value;
+            var b=document.getElementById('val2').value;
+            var c=Number(a)*Number(b);
+            document.getElementById('tot').value=c;
+        }
+    </script>
+
+</body>
+</html>
