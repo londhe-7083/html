@@ -10,16 +10,39 @@
     <input type="text" id="val1"><br><br>
     <input type="text" id="val2"><br><br>
     <button onclick="sum1()">+</button>
-    <button onclick="sum1()">-</button>
-    <button onclick="sum1()">*</button>
-    <button onclick="sum1()">/</button><br><br>
+    <button onclick="subtraction1()">-</button>
+    <button onclick="mul1()">*</button>
+    <button onclick="divide1()">/</button><br><br>
     <input type="text" id="tot" readonly>
+
+    
     <script type="text/javascript">
         function sum1(){
             var a=document.getElementById('val1').value;
             var b=document.getElementById('val2').value;
             var c=Number(a)+Number(b);
+            document.getElementById('tot').value=c;
+        }
 
+        function subtraction1(){
+            var a=document.getElementById('val1').value;
+            var b=document.getElementById('val2').value;
+            var c=Number(a)-Number(b);
+            document.getElementById('tot').value=c;
+        }
+
+        function mul1(){
+            var a=document.getElementById('val1').value;
+            var b=document.getElementById('val2').value;
+            var c=Number(a)*Number(b);
+            document.getElementById('tot').value=c;
+        }
+
+        function divide1(){
+            var a=document.getElementById('val1').value;
+            var b=document.getElementById('val2').value;
+            var c=Number(a)/Number(b);
+            document.getElementById('tot').value=c;
         }
     </script>
 
