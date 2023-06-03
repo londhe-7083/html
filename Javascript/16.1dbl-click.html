@@ -7,13 +7,18 @@
     <title>double click</title>
     <style>
         .box{height:400px;width:400px;float:left;
-              background-color: red;      }    
+              background-color: red;
+              }    
 </style>
 </head>
 <body>
-    <div class="box"></div>
-    <button onclick="mouse1()">click</button>
-    <button ondblclick="dblclick()">double click</button>
+    <div class="box" oncontextmenu="menu1">
+        <button onclick="mouse1()">click</button>
+        <button ondblclick="dblclick()">double click</button>
+        <button onmouseover="over1()">on mouse over</button>
+        <button oncontextmenu="menu1()">constex menu</button>
+        <button onmouseout="out1()">on-mouseotu</button>
+    </div>
 
     <script>
         function mouse1(){
@@ -23,6 +28,20 @@
         function dblclick(){
             document.getElementsByClassName('box')[0].style="background:green";
         }
+
+        function over1(){
+            document.getElementsByClassName('box')[0].style="background:yellow";
+        }
+
+        function menu1(){
+            document.getElementsByClassName('box')[0].style="background:blue";
+        }
+
+        function out1(){
+            document.getElementsByClassName('box')[0].style="background:pink";
+        }
+
+
     </script>
     
 </body>
