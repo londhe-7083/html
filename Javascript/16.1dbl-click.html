@@ -6,19 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>double click</title>
     <style>
+        
         .box{height:400px;width:400px;float:left;
               background-color: red;
-              }    
+              border-radius: 50%;
+            }    
+   
+        .btn{
+            display: block;
+            position: relative;
+            left: 40px;
+            padding: 50px;
+            top: 10vw;
+        }
+
+        .btn button{
+            padding: 8px;
+            margin: 5px;
+            background-color: rgb(144, 107, 179);
+            color: white ;
+            border: none;
+            border-radius: 10px;
+        }
+
 </style>
 </head>
 <body>
-    <div class="box" oncontextmenu="menu1">
+        <div class="box" oncontextmenu="menu1">
+        </div>
+    <div class="btn">
         <button onclick="mouse1()">click</button>
         <button ondblclick="dblclick()">double click</button>
         <button onmouseover="over1()">on mouse over</button>
         <button oncontextmenu="menu1()">constex menu</button>
         <button onmouseout="out1()">on-mouseotu</button>
-    </div>
+         </div>
 
     <script>
         function mouse1(){
@@ -34,7 +56,7 @@
         }
 
         function menu1(){
-            document.getElementsByClassName('box')[0].style="background:blue";
+            document.getElementsByClassName('box')[0].style="background:orange";
         }
 
         function out1(){
