@@ -10,7 +10,8 @@
             border: 2px solid #0032ff;
             width: 200px;
             text-align: center;
-            height: 170px;
+            height: 270px;
+            color: rgb(228, 31, 21);
             padding: 20px;
             border-radius: 10px;
             background-color: yellow;
@@ -19,6 +20,8 @@
 
         .sign{
             background-color: pink;
+            border: none;
+            margin: 5px;
         }
 
         
@@ -26,6 +29,7 @@
 </head>
 <body>
     <div class="box">    
+        <h1> Calculator </h1>
         <input type="text" id="val1"><br><br>
         <input type="text" id="val2"><br><br>
         <button class="sign" onclick="sum1()">+</button>
@@ -44,25 +48,44 @@
             document.getElementById('tot').value=c;
         }
 
-        function subtraction1(){
-            var a=document.getElementById('val1').value;
-            var b=document.getElementById('val2').value;
-            var c=Number(a)-Number(b);
-            document.getElementById('tot').value=c;
-        }
+        // function subtraction1(){
+        //     var a=document.getElementById('val1').value;
+        //     var b=document.getElementById('val2').value;
+        //     var c=Number(a)-Number(b);
+        //     document.getElementById('tot').value=c;
+        // }
 
-        function mul1(){
-            var a=document.getElementById('val1').value;
-            var b=document.getElementById('val2').value;
-            var c=Number(a)*Number(b);
-            document.getElementById('tot').value=c;
-        }
+        // function mul1(){
+        //     var a=document.getElementById('val1').value;
+        //     var b=document.getElementById('val2').value;
+        //     var c=Number(a)*Number(b);
+        //     document.getElementById('tot').value=c;
+        // }
 
-        function divide1(){
+        // function divide1(){
+        //     var a=document.getElementById('val1').value;
+        //     var b=document.getElementById('val2').value;
+        //     var c=Number(a)/Number(b);
+        //     document.getElementById('tot').value=c;
+        // }
+
+        function cal(pr){
             var a=document.getElementById('val1').value;
             var b=document.getElementById('val2').value;
-            var c=Number(a)/Number(b);
-            document.getElementById('tot').value=c;
+
+            if(pr== '-'){
+                var c= NUmber(a)-Number(b);
+            }
+
+            else if(pr=='+'){
+                var c= NUmber(a)+Number(b);
+            }
+
+            else if(pr == "/"){
+                var c= NUmber(a)/Number(b);
+            }
+
+            document.getElementById(tot)=c;
         }
     </script>
 
