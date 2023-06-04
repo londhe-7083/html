@@ -7,19 +7,31 @@
     <title>Document</title> 
     <style>
         .box{
-            border: 2px solid yellow;
-            
+            border: 2px solid #0032ff;
+            width: 200px;
+            text-align: center;
+            height: 170px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: yellow;
+            margin: auto;
         }
+
+        .sign{
+            background-color: pink;
+        }
+
+        
     </style>
 </head>
 <body>
     <div class="box">    
         <input type="text" id="val1"><br><br>
         <input type="text" id="val2"><br><br>
-        <button onclick="sum1()">+</button>
-        <button onclick="subtraction1()">-</button>
-        <button onclick="mul1()">*</button>
-        <button onclick="divide1()">/</button><br><br>
+        <button class="sign" onclick="sum1()">+</button>
+        <button class="sign" onclick="subtraction1()">-</button>
+        <button class="sign" onclick="mul1()">*</button>
+        <button class="sign" onclick="divide1()">/</button><br><br>
         <input type="text" id="tot" readonly>
     </div>
 
