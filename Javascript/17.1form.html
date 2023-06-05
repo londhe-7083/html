@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <style>
+        .main{
+            display: inline-block;
+            border: 2px solid green;
+            height: auto;
+            padding: 28px;
+            background-color: aquamarine;
+        }
+
+      
+
+        .inp1{
+            margin: auto;
+        }
+
+        .check{
+            text-align: center;
+        }
+
+         
+
+    </style>
+</head>
+<body>
+    
+    <h1> Form Check Demo </h1>
+
+
+    <form class="main" onsubmit="return prompt('succeessfull')">
+        <div class="check">
+            Active form<input type="checkbox"  id="disab" onclick="enablebox(this)" class="inp inp1"><br><br>
+        </div>
+
+    <label class="inp" > Name </label><br>
+    <input type="text"  id="disabl" disabled="disabled" placeholder="Enter Your Name" required><br><br>
+
+    <label class="inp">Email</label><br>
+    <input type="text" placeholder="Enter Your Email" id="disabl1" disabled="disabled" required><br><br>
+
+    <label class="inp">Mobile No </label><br>
+    <input type="number" placeholder="Enter Your Mobile" id="disabl2" disabled="disabled" required><br><br>
+
+    <label class="inp"> Date of Birth</label><br>
+    <input type="date" placeholder="dd/mm/yy" id="myPsw" id="disabl2" disabled="disabled" required><br><br>
+
+    <div class="inp" required>
+        Gender:
+        male<input type="radio" name="myGender" >
+        Female<input type="radio" name="myGender" >
+        other<input type="radio" name="myGender" >
+    </div>
+    <button id="disabl7" disabled="disabled">submit</button>
+</form>
+
+<script>
+    function enablebox(disab)
+    { 
+        var disabl = document.getElementById("disabl");
+        disabl.disabled= disab.checked?false:true;
+        var disabl = document.getElementById("disabl1");
+        disabl.disabled= disab.checked?false:true;
+        var disabl = document.getElementById("disabl2");
+        disabl.disabled= disab.checked?false:true;
+       
+ 
+        if(!disabl.disabled) {
+
+            disabl.focus();
+        }
+    }
+</script>
+
+</body>
+</html>

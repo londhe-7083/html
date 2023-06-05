@@ -10,18 +10,25 @@
     <form>
         <label>Name:</label>
         <input type="text" id="name" onfocus="focus1()"><br><br>
+
         <label>Email:</label>
         <input type="text" id="email" onfocus="focus2()"><br><br>
+
         <label>mobile:</label>
-        <input type="text" id="mobile" onfocus="focus3()"><br><br>
+        <input type="number" id="mobile" onfocus="focus3()"><br><br>
+
         <label>Subject:</label>
-        <select id="sub">
+        <select id="sub" onfocus="chang()">
             <option>HTML</option>
             <option>CSS</option>
             <option>JS</option>
         </select><br><br>
     </form>
     <script>
+        function chang() {
+            doument.getElementById('sub').style="background-color:red";
+        }
+
         function focus1(){
             document.getElementById('name').style="background:yellow";
         }

@@ -7,22 +7,23 @@
     <title>select</title>
 </head>
 <body>
-    <form onsubmit="return confirm('Are U Sure') ">
+    <form onsubmit="return alert('Are U Sure') ">
         <label>Name:</label>
-        <input type="text" id="name" onfocus="focus1('name')" onblur="blur1('name')" onselect="select1()"><br><br>
+        <input type="text" id="name" onfocus="focus1('name')" onblur="blur1('name')" onselect="select1()" required><br><br>
         <label>Email</label>
-        <input type="email" id="email" onfocus="focus1('email')" onblur="('email')"><br><br>
+        <input type="email" id="email" onfocus="focus1('email')" onblur="blur1('email')" required><br><br>
         <label>Mobile</label>
-        <input type="number" id="mobile" onfocus="focus1('mobile')" onblur="blur1('mobile')"><br><br>
+        <input type="number" id="mobile" onfocus="focus1('mobile')" onblur="blur1('mobile')" required><br><br>
         <label>Subject</label>
-        <select id="sub">
+        <select id="sub" onchange="chang1()">
             <option>HTML</option>
             <option>CSS</option>
             <option>JS</option>
         </select><br><br>
+        <button>Save</button>
     </form>
     <script>
-        function chang(){
+        function chang1(){
             document.getElementById('sub').style="background-color:red"
         }
 
@@ -31,8 +32,13 @@
         }
 
         function blur1(pa){
-            document.getElementById(pa).style="background"
+            document.getElementById(pa).style="background:green";
         }
+
+        function select1(){
+            document.getElementById('name').style="background:pink";
+        }
+
     </script>
     
 </body>
