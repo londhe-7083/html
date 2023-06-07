@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append</title>
+</head>
+<body>
+    <h1> the element object</h1>
+    <h1>the append child method</h1>
+
+    <ul id="my list">
+        <li> coffee</li>
+        <li> tea </li>
+    </ul>
+    <button onclick="myfucntion()">Append</button>
+
+    <script>
+        // create an list node
+
+        function myfucntion(){             
+            //create a "li" node
+            const node = document .createElement('water');
+            
+            //create a text node
+            const textnode = document .createTextNode('water');
+
+            //append the last node to the "li" node
+
+            node.appendChild(textnode);
+
+            //append the "li" node to the list
+
+            document.getElementById("myist").appendChild(node);
+
+        }
+    </script>
+</body>
+</html>

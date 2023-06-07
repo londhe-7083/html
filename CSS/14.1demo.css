@@ -5,13 +5,20 @@ body{
 
 .image{
     animation-name: airoplane;
-    animation-duration: 30s;
+    animation-duration: 10s;
     position: relative;
 }
 
 @keyframes airoplane{
-   0%{top: 320px;left: 100%;}
+   /* 0%{top: 320px;left: 100%;}
    50%{top: 320px;left: 40%;}
    95%{top: 50px;left: 0%;}
-   100%{top: 10px;left: 0%;}
+   100%{top: 10px;left: 0%;} */
+
+   
+   0%{top: 10px;left: 100%;}
+   50%{top: 50px;left: 60%;}
+   75%{top: 60px;left: 40%;}
+   95%{top: 320px;left: 10%;}
+   100%{top: 320px;left: 0%;}
 }

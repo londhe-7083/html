@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttons</title>
+    <style>
+        .main-box{
+            height: auto;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boxes{
+            height: 100px;
+            width: 155px;
+            background-color: red;
+            border: 2px solid white;
+            margin: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="boxes" id="box"  onclick="click()">Home</div>
+        <div class="boxes">About</div>
+        <div class="boxes">Services</div>
+        <div class="boxes" >Blog</div>
+        <div class="boxes">Contact</div>
+        <div class="boxes">Product</div>
+    </div>
+
+    <script>
+        function click(){
+            document.querySelectorAll("div.boxes").style="background:pink";
+        }
+
+    </script>
+</body>
+</html>

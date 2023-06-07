@@ -1,0 +1,25 @@
+.heading{
+    padding: 10vw;
+}
+
+.heading{
+    font-size: 50px;
+}
+
+.heading h2{
+    font-family: 'Schoolbell', cursive;}
+
+.button{
+    background-color: #00c3ed;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.button:hover{
+    background-color: #00c3ed;
+
+}
