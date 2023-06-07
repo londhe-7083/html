@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner html</title>
+</head>
+<body>
+    <span id="first">Hello friends</span>
+
+    <script>
+        console.log(first.innerHTML);
+        console.log(first.outerHTML);
+        console.log(first.innerText);
+
+        // first.innerHTML = '<i>hello i am : italic<i>';
+        first.outerHTML = '<b>hello i am : italic<b>';
+        // first.outerHTML = '<mark>hello i am : italic</mark>';
+        // first.innerText = '<b>hello i am : italic<b>';
+        // document.getElementById('first').innerText="<mark>hello mark</mark>"
+
+    </script>
+    
+</body>
+</html>

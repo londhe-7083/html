@@ -13,8 +13,7 @@
             display: flex;
             justify-content: space-around;
         }
-
-        .boxes{
+       .boxes{
             height: 100px;
             width: 155px;
             background-color: red;
@@ -30,17 +29,37 @@
 </head>
 <body>
     <div class="main-box">
-        <div class="boxes" id="box"  onclick="click()">Home</div>
-        <div class="boxes">About</div>
-        <div class="boxes">Services</div>
-        <div class="boxes" >Blog</div>
-        <div class="boxes">Contact</div>
-        <div class="boxes">Product</div>
+        <div class="boxes" id="box"   onmouseout="boxcolorA">Home</div>
+        <div class="boxes" id="box1"  onclick="boxcolor1()" onmouseout="boxcolorB">About</div>
+        <div class="boxes"  id="box2"  onclick="boxcolor2()" onmouseout="boxcolorc">Services</div>
+        <div class="boxes"  id="box3"  onclick="boxcolor3()" onmouseout="boxcolord">Blog</div>
+        <div class="boxes"  id="box4"  onclick="boxcolor4()" onmouseout="boxcolore">Contact</div>
+        <div class="boxes"  id="box5"  onclick="boxcolor5()" onmouseout="boxcolorf">Product</div>
     </div>
 
     <script>
-        function click(){
-            document.querySelectorAll("div.boxes").style="background:pink";
+        function boxcolor(){
+            document.getElementById("box").style="background:yellow";
+        }
+
+        function boxxolorA(){
+            document.getElementById("box").style="background:yellow"
+        }
+
+        function boxcolor1(){
+            document.getElementById("box1").style="background:yellow";
+        }
+        function boxcolor2(){
+            document.getElementById("box2").style="background:yellow";
+        }
+        function boxcolor3(){
+            document.getElementById("box3").style="background:yellow";
+        }
+        function boxcolor4(){
+            document.getElementById("box4").style="background:yellow";
+        }
+        function boxcolor5(){
+            document.getElementById("box5").style="background:yellow";
         }
 
     </script>
