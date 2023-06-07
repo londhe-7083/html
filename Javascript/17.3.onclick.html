@@ -29,12 +29,12 @@
 </head>
 <body>
     <div class="main-box">
-        <div class="boxes" id="box"   onmouseout="boxcolorA">Home</div>
-        <div class="boxes" id="box1"  onclick="boxcolor1()" onmouseout="boxcolorB">About</div>
-        <div class="boxes"  id="box2"  onclick="boxcolor2()" onmouseout="boxcolorc">Services</div>
-        <div class="boxes"  id="box3"  onclick="boxcolor3()" onmouseout="boxcolord">Blog</div>
-        <div class="boxes"  id="box4"  onclick="boxcolor4()" onmouseout="boxcolore">Contact</div>
-        <div class="boxes"  id="box5"  onclick="boxcolor5()" onmouseout="boxcolorf">Product</div>
+        <div class="boxes"  id="box"    onclick="boxcolor()" onmouseout="boxcolorA()">Home</div>
+        <div class="boxes"  id="box1"   onclick="boxcolor1()" onmouseout="boxcolorB()">About</div>
+        <div class="boxes"  id="box2"  onclick="boxcolor2()" onmouseout="boxcolorC()">Services</div>
+        <div class="boxes"  id="box3"  onclick="boxcolor3()" onmouseout="boxcolorD()">Blog</div>
+        <div class="boxes"  id="box4"  onclick="boxcolor4()" onmouseout="boxcolorE()">Contact</div>
+        <div class="boxes"  id="box5"  onclick="boxcolor5()" onmouseout="boxcolorF()">Product</div>
     </div>
 
     <script>
@@ -42,25 +42,47 @@
             document.getElementById("box").style="background:yellow";
         }
 
-        function boxxolorA(){
-            document.getElementById("box").style="background:yellow"
+        function boxcolorA(){
+            document.getElementById("box").style="background:red"
         }
 
         function boxcolor1(){
             document.getElementById("box1").style="background:yellow";
         }
+
+        function boxcolorB(){
+            document.getElementById("box1").style="background:red"
+        }
         function boxcolor2(){
             document.getElementById("box2").style="background:yellow";
+        }
+
+        function boxcolorC(){
+            document.getElementById("box2").style="background:red"
         }
         function boxcolor3(){
             document.getElementById("box3").style="background:yellow";
         }
+
+        function boxcolorD(){
+            document.getElementById("box3").style="background:red"
+        }
         function boxcolor4(){
             document.getElementById("box4").style="background:yellow";
+        }
+
+        function boxcolorE(){
+            document.getElementById("box4").style="background:red"
         }
         function boxcolor5(){
             document.getElementById("box5").style="background:yellow";
         }
+
+        function boxcolorF(){
+            document.getElementById("box5").style="background:red"
+        }
+
+       
 
     </script>
 </body>
