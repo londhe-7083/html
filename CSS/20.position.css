@@ -9,11 +9,11 @@
     height: 200px;
     width: 200px;
     float: left;
-    background-color:green;
+    background-color:rgb(0, 2, 128);
     /* position: relative; */
-    /* position: absolute; */
+    position: absolute;
     /* position: static; */
-    position: fixed;
+    /* position: fixed; */
 
 }
 

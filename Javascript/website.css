@@ -1,20 +1,46 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4f6fb;
+}
+
+.brd{
+border-bottom: 1px solid #dae0ef;
+}
+
+.mid-nav{
+    margin-left: 27vw;
+}
+
+.nav-head{
+    font-size: 18px;
+    font-weight: 600;
+    color: #081340;
+}
+
 .heading{
     padding: 10vw;
+    text-align: center;
 }
 
-.heading{
-    font-size: 50px;
-}
+.heading2{
+    font-size: 62px;
+    width: 65%;
+    margin: auto;
+    font-weight: 600;
+    line-height: 80px;
+    margin-bottom: 20px;
+    font-family: 'Exo 2', sans-serif;}
 
 .heading h2{
-    font-family: 'Schoolbell', cursive;}
+    font-family: 'Schoolbell', cursive; 
+}
 
 .button{
     background-color: #00c3ed;
-    padding: 15px;
+    padding: 16px;
     color: white;
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
     display: flex;
     margin: auto;
 }
@@ -22,4 +48,16 @@
 .button:hover{
     background-color: #00c3ed;
 
+}
+
+.water{
+    margin-top: 5vw;
+}
+
+.image{
+    margin-left: 7vw;
+}
+
+.imageA{
+    bottom: 40vw;
 }
