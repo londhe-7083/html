@@ -18,6 +18,10 @@ border-bottom: 1px solid #dae0ef;
     color: #081340;
 }
 
+span b{
+    color:#151f4a;
+}
+
 .heading{
     padding: 10vw;
     text-align: center;
@@ -34,6 +38,10 @@ border-bottom: 1px solid #dae0ef;
 
 .heading h2{
     font-family: 'Schoolbell', cursive; 
+}
+
+.secA{
+    height: 38vw;
 }
 
 .button{
@@ -60,4 +68,22 @@ border-bottom: 1px solid #dae0ef;
 
 .imageA{
     bottom: 40vw;
+}
+
+.welcome{
+    font-family: 'Schoolbell', cursive; 
+}
+
+.welcomeA{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.welcome-p{
+    width: 38%;
+    font-size: 18px;
+}
+
+.water-type-img{
+    border: 2px solid blue;
+    border-radius: 50%;
 }
