@@ -55,7 +55,10 @@ span b{
 
 .button:hover{
     background-color: #00c3ed;
+}
 
+.w-type-main{
+background-color: #ffffff;
 }
 
 .water{
@@ -72,6 +75,7 @@ span b{
 
 .welcome{
     font-family: 'Schoolbell', cursive; 
+    color: #ffa21d
 }
 
 .welcomeA{
@@ -83,7 +87,20 @@ span b{
     font-size: 18px;
 }
 
-.water-type-img{
-    border: 2px solid blue;
-    border-radius: 50%;
+.water-types{
+    padding: 30px;
+    text-align: center;
+    margin-top: 44px;
+}
+
+.w-types-img{
+    border-right: 1px solid rgba(184, 205, 202, 0.766);
+}
+
+.water-types i{
+    color: #ffa21d;
+}
+
+.arrow-r{
+    width: 50%;
 }

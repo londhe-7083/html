@@ -18,30 +18,19 @@
     </script> -->
         <input type="text" id="val1"> <br>
         <input type="text" id="val2"> <br>
-        <button onclick="cal()">add</button><br>
+        <button onclick="cal(val1.value,val2.value)">add</button><br>
         <input type="text" id="tot"> <br> 
 
         <script>
             function cal(a,b)
             {
                 var cd = Number(a) + Number(b);
-                // document.getElementById(tot).value=cd;
                 console.log(cd);
-                // return cd;
+                document.getElementById(tot).value=cd;
+                document.write(cd);
              }
 
-             cal(document.getElementById('val1').value,document.getElementById('val2').value)
-
-                // document.getElementById('tot').value=cd;
-                // cal(m,n)
-                // var m=document.getElementById('val1').value;
-                // var n=document.getElementById('val2').value;
-                // console.log(m);
             
-
-
-
-            // document.getElementById("value" +bbc);
 
         </script>
 
