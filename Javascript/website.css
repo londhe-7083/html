@@ -88,13 +88,14 @@ background-color: #ffffff;
 }
 
 .water-types{
-    padding: 30px;
+    padding: 0px 30px 5px 30px;
     text-align: center;
     margin-top: 44px;
 }
 
 .w-types-img{
     border-right: 1px solid rgba(184, 205, 202, 0.766);
+    margin-bottom: 8vw;
 }
 
 .water-types i{
@@ -103,4 +104,18 @@ background-color: #ffffff;
 
 .arrow-r{
     width: 50%;
+}
+
+.video-title{
+    font-family: 'Schoolbell', cursive; 
+    color: #ffa21d;
+
+}
+
+.video-sec{
+    margin-top: 8vw;
+}
+
+.video-head{
+    font-size: 49px;
 }
