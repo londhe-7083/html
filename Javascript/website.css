@@ -119,3 +119,47 @@ background-color: #ffffff;
 .video-head{
     font-size: 49px;
 }
+
+.bottle-video-wrap img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 135px;
+    margin-top: 40px;
+    width: 81%;
+
+}
+
+.video-btn{
+    position: absolute;
+    top: 176vw;
+    left: 46%;
+    height: 130px;
+    width: 130px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.805);
+    line-height: 130px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.water-jar{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.water-jar-hed{
+    font-weight: 600;
+    color: black;
+    font-size: 49px;
+}
+
+.water-jar-con{
+    padding-top: 80px;
+    background-color: #fff;
+}
+
+.bottel-image{
+    color: #00c3ed;
+}
