@@ -71,6 +71,7 @@ background-color: #ffffff;
 
 .imageA{
     bottom: 40vw;
+    margin: auto;
 }
 
 .welcome{
@@ -160,6 +161,47 @@ background-color: #ffffff;
     background-color: #fff;
 }
 
+.bottel-image-main{
+height: 20vw;
+margin: auto;
+}
+
+
 .bottel-image{
-    color: #00c3ed;
+    border: 1px solid blue;
+    text-align: center;
+    justify-content: center;
+    padding: 33px; 
+    margin: 15px;
+    width: 23vw;
+    margin-left: 20px;
+}
+
+.bottels{
+    margin: 34px;
+}
+
+.bottel-image h5{
+    line-height: 46px;
+}
+
+.bottels-para{
+    width: 19vw;
+    margin: auto;
+    line-height: 30px;
+}
+
+.all-bottel-btn{
+   padding: 20px;
+}
+
+.all-bottel-main{
+    margin: 20px;
+    padding: 40px;
+}
+
+.mineralo-main{
+    background-color: #151f4a;
+    padding: 10vw;
+    text-align: center;
 }
