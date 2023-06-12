@@ -206,6 +206,11 @@ margin: auto;
     text-align: center;
 }
 
+.info{
+    background-color: #dae0ef;
+    padding-bottom: 60px;
+}
+
 .more-info{
     margin-left: 5vw;
     line-height: 44px;
@@ -215,9 +220,26 @@ margin: auto;
     font-size: 50px;
 }
 
+.info-2{
+margin-left: 60px;
+}
+
 .info-para{
     line-height: 36px;
     font-weight: 400;
     font-size: 18px;
     margin-top: 4vw;
+}
+
+.info-bottles{
+    margin: 10px;
+    background-color: #fff;
+}
+
+.pt-120{
+    padding: 120px;
+}
+
+.pb-90{
+padding-bottom: 90px;
 }
