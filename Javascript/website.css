@@ -205,3 +205,19 @@ margin: auto;
     padding: 10vw;
     text-align: center;
 }
+
+.more-info{
+    margin-left: 5vw;
+    line-height: 44px;
+}
+
+.more-info h2{
+    font-size: 50px;
+}
+
+.info-para{
+    line-height: 36px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 4vw;
+}
