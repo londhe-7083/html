@@ -9,7 +9,7 @@
 <body>
     <form onsubmit="return alert('Are U Sure') ">
         <label>Name:</label>
-        <input type="text" id="name" onfocus="focus1('name')" onblur="blur1('name')" onselect="select1()" required><br><br>
+        <input type="text" id="name" onfocus="focus1('name')" onblur="blur1('name')" onselect="select1('name')" required><br><br>
         <label>Email</label>
         <input type="email" id="email" onfocus="focus1('email')" onblur="blur1('email')" required><br><br>
         <label>Mobile</label>
@@ -35,8 +35,8 @@
             document.getElementById(pa).style="background:green";
         }
 
-        function select1(){
-            document.getElementById('name').style="background:pink";
+        function select1(nam){
+            document.getElementById(nam).style="background:pink";
         }
 
     </script>

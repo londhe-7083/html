@@ -48,7 +48,7 @@
     <input type="number" placeholder="Enter Your Mobile" class="disabl1" disabled="disabled" required><br><br>
 
     <label class="inp"> Date of Birth</label><br>
-    <input type="date" placeholder="dd/mm/yy" id="myPsw" class="disabl1" disabled="disabled" required><br><br>
+    <input type="date" placeholder="dd/mm/yy" id="myPsw"  disabled="disabled" required><br><br>
 
     <div class="inp" required >
         Gender:
@@ -62,14 +62,14 @@
 <script>
     function enablebox(disab)
     { 
-        var disabl = document.querySelectorAll(".disabl");
+        var disabl = document.querySelectorAll(disab);
         disabl.disabled= disab.checked?false:true;
        
        
  
         if(!disabl.disabled) {
 
-            disabl.focus();
+            disabl.onfocus();
         }
     }
 </script>
