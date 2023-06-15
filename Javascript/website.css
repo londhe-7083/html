@@ -236,6 +236,12 @@ margin-left: 60px;
     background-color: #fff;
 }
 
+.line-height{
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .pt-120{
     padding: 120px;
 }
@@ -287,4 +293,34 @@ padding-bottom: 90px;
 
 .feedbackers{
     background-color:#0b1e70;
+}
+
+.our-location{
+    height: 15px;
+    width: 15px;
+    background-color:#00c3ed;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.mark1{
+    top: 44%;
+    left: 18%;
+}
+
+.mark2{
+    top: 56%;
+    left: 42%;
+}
+.mark3{
+    top: 44%;
+    left: 58%;
+}
+.mark4{
+    top: 76%;
+    left: 68%;
+}
+.mark5{ 
+    top: 72%;
+    left: 26%;
 }
