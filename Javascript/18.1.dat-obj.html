@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date object</title>
+</head>
+<body>
+    <script>
+        var da=new Date();
+        console.log(da);
+        document.write("<h1>"+da+"</h1>");
+
+        //date
+        document.write("<br>" +da.getFullYear());
+        //month index start from Zero
+        document.write("-"+Number(da.getMonth()));
+        // document.write("-"+da.getMonth());
+        document.write("-"+da.getDate());
+
+        //time
+        document.write("<br>" +da.getHours());
+        document.write("<br>" +da.getMinutes());
+        document.write("<br>" +da.getSeconds());
+        document.write("<br>" +da.getMilliseconds());
+
+        //day :- index start from Zero
+        document.write("<br>" +da.getDay());
+
+        //set 
+        var da1=new Date();
+
+        // date
+        da1.setFullYear(2010);
+        da1.setMonth(10);
+        da1.setDate(4);
+        document.write("<h1>"+da1+"</h1>" );
+
+        //time
+        da1.setHours(10);
+        da1.setMinutes(50);
+        da1.setSeconds(50);
+        da1.setMilliseconds(50);
+        document.write("<br>" +da1);
+    </script>
+</body>
+</html>
