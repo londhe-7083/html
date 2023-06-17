@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 0;
+            margin: 0;
+            background: #111;
+        }
+
+        .pgn {
+            width: 320px;
+            background-color: #fff;
+            border-radius: 40px;
+            min-height: 40px;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .prev {
+            position: absolute;
+            left: 0;
+            z-index: 2;
+        }
+
+        .next {
+            position: absolute;
+            right: 0;
+            z-index: 2;
+        }
+
+        .btn-page,
+        .prev,
+        .next {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all .3s ease-in-out;
+            font-size: 15px;
+            color: #777;
+
+        }
+
+        .btn-page:hover,
+        .prev:hover,
+        .next:hover,
+        .active {
+            color: #fff !important;
+            background: linear-gradient(45deg, #4273ff, #ac60ff);
+        }
+
+        .pages {
+            position: absolute;
+            left: 40px;
+            transition: all .3s ease-in-out;
+        }
+
+        .page-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .prev1{
+            width: 80px;
+            border-radius: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pgn">
+        <!-- <button type="button" class="prev"><i class="ti-angle-left"></i></button>
+        <button type="button" class="next"><i class="ti-angle-right"></i></button> -->
+        <div class="pages">
+            <div class="page-container">
+                <button type="button" class="btn-page active">1</button>
+                <button type="button" class="btn-page">2</button>
+                <button type="button" class="btn-page">3</button>
+                <button type="button" class="btn-page">4</button>
+                <button type="button" class="btn-page">5</button>
+                <button type="button" class="btn-page">6</button>
+                <button type="button" class="btn-page">7</button>
+                <button type="button" class="btn-page">8</button>
+                <button type="button" class="btn-page">9</button>
+                <button type="button" class="btn-page">10</button> 
+            </div>
+        </div>
+        </div>
+        
+        <button type="button" class="prev prev1"><i class="ti-angle-left">Prev</i></button>
+        <button type="button" class="next prev1"><i class="ti-angle-right">Next</i></button>
+    <script>
+        var count = 0;
+        var pages = document.getElementsByClassName("pages")[0];
+        var buttons = pages.getElementsByClassName("btn-page");
+
+        document.getElementsByClassName("prev")[0].addEventListener("click", prevClick);
+        document.getElementsByClassName("next")[0].addEventListener("click", nextClick);
+
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", btnClick);
+        }
+
+
+        function nextClick() {
+            buttons[count].classList.remove("active");
+            if (count !== buttons.length - 1) {
+                count++;
+            }
+            buttons[count].classList.add("active");
+            if (count <= buttons.length - 6) {
+                pages.style.left = -(count - 1) * 40 + "px";
+            }
+       }
+
+            function prevClick() {
+                buttons[count].classList.remove("active");
+                if(count !== 0){
+                    count--;
+                }
+                buttons[count].classList.add("active");
+                if(count < buttons.length - 6){
+                    pages.style.left = - (count - 1)* 40 + "px";
+                }
+            }
+        
+            function btnClick(){
+                buttons[count].classList.remove("active");
+                count = this.innerHTML - 1;
+                if(count <= buttons.length - 6){
+                    pages.style.left =- (count - 1) * 40 +"px";
+                }
+                buttons[count].classList.add("active");
+
+            }
+    </script>
+</body>
+
+</html>

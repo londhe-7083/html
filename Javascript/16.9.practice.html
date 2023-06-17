@@ -35,6 +35,21 @@
     <script>
        const pageNumbers =document.querySelector(".pageNumbers")
        const paginationList =document.getElementById("pagination")
+       const ListItems = paginationList.querySelectorAll("li");
+       const prevButton = document.getElementById("prev");
+       const nextButton = document.getElementById("next");
+
+       const contentLimit =10;
+       const pageCount = Math.ceil(ListItems.Length / contentLimit)
+       let currentPage = 1;
+
+       const displayPagenumbers = (index) =>{
+        const pageNumber = document.createElement("a");
+        pagenumber.innerText = index;
+        pagenumber.setAttribute('href',"#");
+         
+       }
+
     </script>
     
 </body>
