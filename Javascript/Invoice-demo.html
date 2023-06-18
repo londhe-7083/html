@@ -29,12 +29,16 @@
         }
 
         .btn1,
-        .fields {
+        .fields ,input{
             margin: 5px;
         }
 
         .row2 {
             background-color: rgb(127, 204, 255);
+        }
+
+        input{
+            padding: 5px;
         }
     </style>
 </head>
@@ -48,7 +52,7 @@
             <div class="d-flex">
                 <div class="col-9">
                     <h2>From</h2>
-                    <p class="font-style">shubh londhe creates, <br> Sawtwa Chowk Londhe lane from Ambi</p>
+                    <p class="font-style">shubh londhe creates, <br> Sawtwa Chowk Londhe lane from Ambi, maha-413715</p>
                 </div>
                 <div class="col-3 float-end">
                     <h2>To,</h2>
@@ -73,16 +77,16 @@
                     </tr>
 
                     <tr class="row2">
-                        <td><button class="btn1 bg-danger">D</button></td>
+                        <td><button class="btn1 bg-danger border-0">D</button></td>
                         <td><input type="text" class="fields"></td>
                         <td><input type="text" class="fields"></td>
-                        <td><input type="text" class="fields"></td>
-                        <td><input type="text" class="fields"></td>
-                        <td><input type="text" class="fields"></td>
+                        <td><input type="text" id="qntty" onkeyup="cal()" class="fields"></td>
+                        <td><input type="text" id="tot" onkeyup="cal()" class="fields"></td>
+                        <td><input type="text" id="total" class="fields"></td>
                     </tr>
 
                     <tr>
-                        <td colspan="6" class="btn2"><button class="bg-warning btn1">Add More</button></td>
+                        <td colspan="6" class="btn2"><button class="bg-warning btn1 border-0">Add More</button></td>
                     </tr>
 
                     <tr>
@@ -90,27 +94,58 @@
                             <h1>Notes:-</h1>
                             <textarea cols="85" class="btn1" rows="4"></textarea>
                         </td>
-                        <td colspan="2">
+                        <td colspan="2" class="p-4">
                     
-                       
-                            SubTotal:-<input type="text"><br>
+                            SubTotal:-<input type="text" id="sub-tot"><br>
 
-                            Tax :-<input type="text"><br>
+                            Tax :-&ensp;&ensp;&ensp;&ensp;<input type="text" id="tax-cal" onkeyup="tax()"><br>
 
-                            Tax Total:-<input type="text"><br>
+                            Tax Total:-<input type="text" id="all-tax"><br>
                      
-                            Net Total:-<input type="text"><br>
+                            Net Total:-<input type="text" id="net-tot"><br>
                       
-                            Paid:-<input type="text"><br>
+                            Paid:-&ensp;&ensp;&ensp;&ensp;<input type="text" id="tot-paid" onkeyup="paid()"><br>
                         
-                            Due:-<input type="text"><br>
+                            Due:-&ensp;&ensp;&ensp;&ensp;<input type="text" id="due-tot"><br>
 
-                    </td>
+
+                    </td>;
                     </tr>
                 </table>
             </div>
         </div>
     </div>
+
+    <script>
+        function cal(){
+        var a=document.getElementById("qntty").value;
+        var b=document.getElementById("tot").value;
+        var c=  Number(a)*Number(b);
+        document.getElementById("total").value=c;
+        document.getElementById("sub-tot").value=c;
+        document.getElementById("net-tot").value=c;
+        document.getElementById("due-tot").value=c;
+        }
+
+        function tax(){
+            var m= document.getElementById("sub-tot").value;
+            var n=document.getElementById("tax-cal").value;
+            var o= Number(n)*100/60;
+            document.getElementById("all-tax").value=o;
+            var p=document.getElementById("net-tot").value;
+            var q=Number(o) + Number(p);
+            document.getElementById("net-tot").value=q;
+            document.getElementById("due-tot").value=q;
+
+        }
+
+        function paid(){
+            var s=document.getElementById("tot-paid").value;
+            var v=document.getElementById("net-tot").value;
+            var w=Number(v)-Number(s);
+            document.getElementById("due-tot").value=w;
+        }
+    </script>
 </body>
 
 </html>
