@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history object</title>
+</head>
+<body>
+    <button onclick="back1()">Back</button>
+    <button onclick="next1()">Next</button>
+    <button onclick="go2()">go Back(2)</button>
+    <button onclick="go1()">go Next(2)</button>
+    <script type="text/javascript">
+        var a=history;
+        console.log(a);
+        function next1(){
+            history.forward();
+        }
+        function back1(){
+            history.back();
+        }
+
+        function go1(){
+            history.go(2);
+        }
+
+        function go2(){
+            history.go(-2); 
+            
+        }
+    </script>
+</body>
+</html>
