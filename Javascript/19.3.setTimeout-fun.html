@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout function</title>
+    <style>
+        #box{
+            height: 8vw;
+            width: 9vw;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="color()">Start</button>
+    <button onclick="color2()">Complete</button>
+    <script>
+        setTimeout(color2,30000000);
+        function color(){
+            document.getElementById('box').style.backgroundColor="red";
+        }
+
+        function color2(){
+            clearTimeout(myTimeout);
+            document.getElementById('box').style.backgroundColor="yellow";
+        }
+    </script>
+</body>
+</html>
