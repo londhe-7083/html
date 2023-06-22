@@ -23,21 +23,43 @@
                 </tr>
                 <tr>
                     <td>
-                        <button >Delete</button>
+                        <button>Delete</button>
                     </td>
                     <td>
                         <input type="Text">
                     </td>
                     <td>
-                        <input type="number" id="rate" onkeyup="cal()">
+                        <input type="number" id="rate" onkeyup="cal('rate','qnt','ptotal')">
                     </td>
                     <td>
-                        <button onclick="decqnt()">-</button>
+                        <button onclick="decqnt('qnt','rate','ptotal')">-</button>
                         <input type="number" id="qnt"  min="1" max="50" value="10" readonly>
-                        <button onclick="incqnty()" >+</button>
+                        <button onclick="incqnty('qnt','rate','ptotal')" >+</button>
                     </td>
                     <td>
                         <input type="number" id="ptotal">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td>
+                        <button>Delete</button>
+                    </td>
+                    <td>
+                        <input type="Text">
+                    </td>
+                    <td>
+                        <input type="number" id="rate2" onkeyup="cal('rate2','qnt2','ptotal2')">
+                    </td>
+                    <td>
+                        <button onclick="decqnt('qnt2','rate2','ptotal2')">-</button>
+                        <input type="number" id="qnt2"  min="1" max="50" value="10" readonly>
+                        <button onclick="incqnty('qnt2','rate2','ptotal2')" >+</button>
+                    </td>
+                    <td>
+                        <input type="number" id="ptotal2">
                     </td>
                 </tr>
             </table>
@@ -45,30 +67,30 @@
         </div>
     </div>
     <script>
-        function decqnt(){
-            var qnt=document.getElementById('qnt').value;
+        function decqnt(q,r,t){
+            var qnt=document.getElementById(q).value;
             if (qnt>1){
                 qnt--;
             }
-            document.getElementById('qnt').value=qnt;
-            cal()
+            document.getElementById(q).value=qnt;
+            cal(q,r,t)
         }
 
-        function incqnty(){
-            var qnt=document.getElementById('qnt').value;
+        function incqnty(q,r,t){
+            var qnt=document.getElementById(q).value;
             if(qnt>1){
                 qnt++;
             }
-            document.getElementById('qnt').value=qnt;
-            cal()
+            document.getElementById(q).value=qnt;
+            cal(q,r,t)
         }
 
-        function cal()
+        function cal(r,q,t)
         {
-            var rate=document.getElementById('rate').value;
-            var qnt=document.getElementById('qnt').value;
+            var rate=document.getElementById(r).value;
+            var qnt=document.getElementById(q).value;
             var tot=Number(rate)*Number(qnt);
-            document.getElementById('ptotal').value=tot;
+            document.getElementById(t).value=tot;
         }
     </script>
     </body>

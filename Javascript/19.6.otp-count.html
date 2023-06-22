@@ -7,17 +7,25 @@
 <style>
     #box{
         height: 60px;
-        width: 40px;
+        width: 60px;
         background-color: red;
+        margin: auto;
+        border-radius: 50%;
     }
 </style>
 <body>
     <h1 class="text-center">OTP COUNT DEMO</h1>
-    <div id="box text-center" class="p-2"></div>
+    <div id="box"> 0 </div>
     <div class="text-center">
         <button class="btn btn-info m-4">start</button>
-        <button class="btn btn-warning m-4">stop</button>
+        <button onclick="pause()"  class="btn btn-warning m-4">stop</button>
     </div>
+    <script>
+        var timer = 10;
+        var time = startingMinutes = 60;
+        var ele =document.getElementById('box');
+       
     
+    </script>
 </body>
 </html>
