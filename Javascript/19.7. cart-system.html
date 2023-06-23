@@ -37,7 +37,7 @@
                         <button onclick="incqnty('qnt','rate','ptotal')" >+</button>
                     </td>
                     <td>
-                        <input type="number" id="ptotal">
+                        <input type="number" id="ptotal" class="tot"> 
                     </td>
                 </tr>
 
@@ -59,8 +59,32 @@
                         <button onclick="incqnty('qnt2','rate2','ptotal2')" >+</button>
                     </td>
                     <td>
-                        <input type="number" id="ptotal2">
+                        <input type="number" id="ptotal2" class="tot">
                     </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button>Delete</button>
+                    </td>
+                    <td>
+                        <input type="Text">
+                    </td>
+                    <td>
+                        <input type="number" id="rate3" onkeyup="cal('rate3','qnt','ptotal3')">
+                    </td>
+                    <td>
+                        <button onclick="decqnt('qnt3','rate3','ptotal3')">-</button>
+                        <input type="number" id="qnt3"  min="1" max="50" value="10" readonly>
+                        <button onclick="incqnty('qnt3','rate3','ptotal3')" >+</button>
+                    </td>
+                    <td>
+                        <input type="number" id="ptotal3" class="tot">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><h3 style="text-align: right;">Total=</h3></td>
+                    <td><input type="number" id="alltotal" ></td>
                 </tr>
             </table>
         </div>
@@ -91,7 +115,18 @@
             var qnt=document.getElementById(q).value;
             var tot=Number(rate)*Number(qnt);
             document.getElementById(t).value=tot;
+            tot1()
         }
+
+        function tot1(){ 
+        var to=document.getElementsByClassName('tot');
+        var g=0;
+        console.log(to.length);
+        for(var i=0; i<=to.length; i++){
+         g+=Number(to[i].value);
+        }
+        document.getElementById('alltotal').value=g;
+    }
     </script>
     </body>
 
