@@ -7,44 +7,66 @@
     <style>
       body{
        background-color: aquamarine;
+       font-family: 'Courier New', Courier, monospace;
+      }
+
+      .main{
+        margin-top: -27px;
+        margin-left: -5px;
+        background-color: aqua;
+        width: 14%;
       }
 
       .nav{
-        background-color: aqua;
-
+        height: 100%;
+        margin-top: 7vw;
       }
       .nav li{
         list-style: none;
         text-decoration: none;
-        margin: -18px;
+        margin: 20px;
         padding: 10px;
       }
 
-      .main ul{
-        display: flex;
-      }
 
       .box{
         height: 30vw;
         width: 50vw;
-        background-color: aliceblue;
+        background-color: #ffffff;
         text-align: center;
         margin: auto;
+        background-repeat: no-repeat;
+      }
+
+      .box img{
+        border: 2px solid white;
+      }
+
+      .box img:hover{
+        box-shadow: 6px 6px 22px -5px #000000cf
+      }
+
+      .first{
+        display: flex;
       }
 
     </style>
 </head>
 <body>
-    <nav +class="main">
+  <div class="first">
+    <nav class="main">
         <ul class="nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Information</a></li>
-            <li><a href="">Guide</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./Information.html">Information</a></li>
+            <li><a href="./Guide.html">Guide</a></li>
         </ul>
     </nav>
     <div class="box">
         <h1> laptop purchase guide</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMkTqTIopmkLYUK9IuwB0FuSGSLaIAN_W8w&usqp=CAU&reload=on";>
+
+    </div>
     </div>
 
 </body>
