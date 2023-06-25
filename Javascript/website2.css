@@ -1,0 +1,51 @@
+.title{
+    padding: 23px;
+}
+
+.title img{
+    height: 33px;
+}
+
+.coloA{
+    background-color: #87C345;
+}
+
+.text-A{
+    color: #87C345;
+}
+
+.p-20{
+    margin-left: 60px;
+    font-weight: 700;
+}
+
+.ml-10{
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.img-1{
+    background-image: url("https://justgreen.co.in/wp-content/uploads/2023/04/banner-img.png");
+    height: 35vw;
+    width: 100%;
+}
+
+.font-st1{
+    font-family: "Amatic SC", Sans-serif;
+}
+
+.h1-size{
+    font-size: 80px;
+}
+
+.h3-size{
+    font-size: 40px;
+}
+
+.pt-30{
+    padding-top: 10vw;
+}
+
+.fonts-A{
+    font-weight: 500;
+}
