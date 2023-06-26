@@ -47,5 +47,10 @@
 }
 
 .fonts-A{
-    font-weight: 500;
+    font-weight: 450;
 }
+
+.pb-10{
+    padding-bottom: 5vw;
+}
+
