@@ -57,3 +57,35 @@
 .video-d{
     position: absolute;
 }
+
+.img-border{
+    padding: 60px;
+    margin: 50px;
+    background-color: #087a63;
+    margin-left: 54vw;
+}
+
+.sv{
+    padding: 20px;
+    margin-top: 400px;
+}
+
+.footerB{
+    padding-top: 40vw;
+}
+
+.text-B{
+    color: #087a63;
+}
+
+input{
+    border: none;
+}
+
+.email{
+    background-color: #d3e8bc;
+}
+
+.email-box{
+    width: 40vw;
+}
