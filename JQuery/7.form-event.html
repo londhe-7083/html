@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</ head>
+<body>
+    <form id="myform">
+        <input type="text" id="input">
+        <button>Submit</button>
+    </form>
+    <script>
+        $(document).ready(function(){
+            $("#input").focus(function(){
+                console.log("focus fiered");
+            });
+
+            $("#input").blur(function(){
+                console.log("blur fiered");
+            });
+
+            $("#input").change(function(){
+                console.log("on change fiered");
+            });
+
+            $("#myform").submit(function(){
+                alert("on submit");
+            });
+        })
+    </script>
+</body>
+</html>
