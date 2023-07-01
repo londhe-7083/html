@@ -18,6 +18,10 @@
     padding-bottom: 0px !important;
 }
 
+.mrl{
+    margin: 0px 4px;
+}
+
 .fs-17{
     font-size: 17px !important;
 }
@@ -28,4 +32,8 @@
 
 .head1{
     margin-left: 15px;
+}
+
+.box{
+    border-radius: 0px 50px 50px 0px;
 }
