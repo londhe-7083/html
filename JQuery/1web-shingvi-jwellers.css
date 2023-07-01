@@ -3,5 +3,25 @@
 }
 
 .pl-20{
-    padding-left: 50px;
+    padding-left: 30px;
+}
+
+.ml-20{
+    margin-left: 30px !important;
+}
+
+.pb-0{
+    padding-bottom: 0px !important;
+}
+
+.pt-0{
+padding-top: 0px !important;
+}
+
+.fs-17{
+    font-size: 17px !important;
+}
+
+.head1{
+    margin-left: 15px;
 }
