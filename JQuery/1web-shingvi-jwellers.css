@@ -22,6 +22,10 @@
     margin: 0px 4px;
 }
 
+.prl{
+    padding: 0px 8px;
+}
+
 .fs-17{
     font-size: 17px !important;
 }
@@ -36,4 +40,24 @@
 
 .box{
     border-radius: 0px 50px 50px 0px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.disp{
+    display: none;
+}
+
+#mybtn{
+    cursor: pointer;
+}
+ 
+.mrl-8{
+    margin: 8px 12px;
+}
+
+.card-img-top:hover{
+    transform: scale(1.2,1.2);
 }
