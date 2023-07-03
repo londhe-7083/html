@@ -58,6 +58,67 @@
     margin: 8px 12px;
 }
 
-.card-img-top:hover{
-    transform: scale(1.2,1.2);
+/* .card-top-img{
+    overflow: hidden;
+    border: 2px solid red !important;
+    height: 300px !important;
+    width: 200px !important;
+}
+
+.card-top-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-top-img img:hover{
+    transform: scale(1.1,1.1);
+} */
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.gh-main{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.gh-mainB{
+    height: 200px;
+    width: 100%;
+    background-color: red;
+}
+
+.sh-main{
+    display: none;
+}
+
+.show-sil{
+    display: block;
+}
+
+.sh-mainB{
+    height: 200px;
+    width: 100%;
+    background-color: blue;
+}
+
+.oh-main{
+    display: none;
+}
+.oh-mainn{
+    display: none;
+}
+
+.show-offr{
+    display: block;
+}
+
+.oh-mainB{
+    height: 200px;
+    width: 100%;
+    background-color: palevioletred;
 }

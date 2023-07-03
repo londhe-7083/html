@@ -43,11 +43,11 @@
 
               <ul class="navbar-nav">
                 <li class="nav-item pl-20">
-                  <a class="nav-link active fs-17" aria-current="page" href="#">GOLD</a>
+                  <a class="nav-link active fs-17" id="gh-btn" aria-current="page" href="#">GOLD</a>
                 </li>
 
                 <li class="nav-item pl-20">
-                  <a class="nav-link active fs-17" href="#">SILVER</a>
+                  <a class="nav-link active fs-17" id="silver-btn" href="#">SILVER</a>
                 </li>
                 <li class="nav-item pl-20">
                   <a class="nav-link active fs-17" href="#">ABOUT US</a>
@@ -66,9 +66,9 @@
 
       <div class="d-flex pt-2 align-self-center">
         <div class="d-flex">
-          <div>
+          <div id="oh-btn">
             OFFER'S
-            <i class="fa fa-angle-right"></i>
+            <i class="fa fa-angle-down"></i>
           </div>
           <div>
             <i class="fa fa-gift pl-20 fs-26"></i>
@@ -94,6 +94,27 @@
       <hr>
     </div>
   </header>
+
+  <div class="gh-main">
+    <div class="gh-mainB">
+
+    </div>
+
+  </div>
+
+  <div class="sh-main">
+    <div class="sh-mainB">
+
+    </div>
+
+  </div>
+
+  <div class="oh-main">
+    <div class="oh-mainB">
+
+    </div>
+
+  </div>
 
   <div class=" fs-17 p-4 col-12 d-flex">
     <div class="col-3">
@@ -158,7 +179,7 @@
                 <div class="col-12 d-flex">
                   <div class="overflow-hidden card col-3 mrl-8" style="width: 14rem;">
                     <img src="https://shingavijewellers.com//uploads/product-1680158147-27830.jpg" class="card-img-top" alt="...">
-                    <div class="card-body p-2">
+                    <div class="card-body p-2 overflow-hidden">
                       <div>Kimaya Short Neklace</div>
                         <div>₹&nbsp;1,98,224</div>
                     </div>                                       
@@ -326,7 +347,23 @@
         $("#mycont").toggle();
         $("#mybtn").toggleClass("rotate");
       });
+
+      $("#gh-btn").hover(function(){
+        $(".gh-main").toggleClass("show");
+      })
+
+      $("#silver-btn").hover(function(){
+        $(".sh-main").toggleClass("show-sil");
+      })
+
+      $("#oh-btn").mouseenter(function(){
+        $(".oh-main").slideDown("slow");
+      })
+
+      
     });
+
+
   </script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
