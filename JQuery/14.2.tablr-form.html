@@ -1,0 +1,33 @@
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+<table width="100%" border="1">
+    <tr>
+        <th>Product Name</th>
+        <th>Rate</th>
+        <th>Qty</th>
+        <th>Total</th>
+        <th>Axction</th>
+    </tr>
+    <tbody id="mytable">
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><button id="mybtn">+</button></td>
+        </tr>
+        <script>
+            $(document).ready(function(){
+                $("#mybtn").click(function(){
+
+                    $("#mytable").append(`<tr>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    <td><input type="text"></td>
+                                    </tr>`);
+                                    
+                });
+            });
+        </script>
+    </tbody>
+</table>
