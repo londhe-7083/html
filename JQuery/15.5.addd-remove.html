@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add and</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" ></script>
+
+    <style>
+        .box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="box"></div>
+    <button id="mybtn">APPLY CLASS</button>
+    <script>
+        $(document).ready(function(){
+            $("#mybtn").click(function(){
+
+                //$("#mydiv").addclass("circle");
+                //$("#mydiv").removeclass("circle");
+                $("#mydiv").toggleClass("circle");
+
+            })
+        })
+    </script>
+    
+</body>
+</html>
