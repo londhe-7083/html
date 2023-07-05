@@ -7,11 +7,14 @@
 </head>
 <body>
     <div id="mydiv">hello, It's Div Tag</div>
+    <input type="text" id="inp" value="rani">
     <script>
         $(document).ready(function()
         {
             var data = $("#mydiv").html();
-            console.log(data);;
+            console.log(data);
+            var valu = $("#inp").val();
+            console.log(valu);
         });
     </script>
     

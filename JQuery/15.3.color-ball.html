@@ -20,13 +20,18 @@
                 var cnum = parseInt(Math.random()*10);
 
                 var left = parseInt(Math.random()*100);
-                var top = parseInt(math.random()*100);
+                var top = parseInt(Math.random()*100);
 
                 $("#mydiv").append(`
-                <div style='background':` +color+`;
-                height:100px`)
-                
-                
+                <div style='background-color:` +color[cnum]+`;
+                height:100px;
+                width:100px;
+                border-radius:50%;
+                position:fixed;
+                left:`+left+`%;
+                top:`+top+`%;
+                '> </div>`
+                );                                
             });
         });
     </script>

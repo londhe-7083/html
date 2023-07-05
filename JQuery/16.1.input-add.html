@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adding input fields addition</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="mydiv">
+        <input type="number" class="inpbox" onkeyup="claculate()">
+    </div>
+    <button id="mybtn">Add More input</Input></button>
+    <br><br>
+    <input type="text" id="result">
+
+    <script>
+        $(document).ready(function(){
+            $("#mybtn").click(function(){
+                $("#mydiv").append(`<input type="number" class="inpbox"
+                  onkeyup="calculate()">`);
+            });
+        });
+
+        function calculate(){
+
+            var allinps = $(".inpbox");
+            var sum =0;
+            for(var i=0; i<allinps.length;i++){
+                sum=sum+Number(allinps[i].value);
+            }
+            $("#result").val(sum);
+        }
+    </script>
+</body>
+</html>

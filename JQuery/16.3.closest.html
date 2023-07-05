@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closest</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <style>
+        div {
+            border: 2px solid black;
+            padding: 10px;
+            border-color: rgb(3, 52, 215);
+        }
+    </style>
+    </head>
+
+    <div class="div1">Div 1
+        <div class="div2">div 2
+            <div class="div3">div 3
+                <div class="div4">div 4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".div4").click(function(){
+                // $(".div4").parent().css({'background-color':'red'});
+                // $(".div4").parent().parent().css({'background-color':'red'});
+                // $(".div4").parents().css({'background-color':'red'});
+                $(".div4").parents('b').css({'background-color':'red'});
+
+            })
+        })
+    </script>
+
+<body>
+
+</body>
+
+</html>

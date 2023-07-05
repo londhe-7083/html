@@ -9,8 +9,8 @@
 </head>
 <body>
     <input type="text" id="myinp">
-    <div id="mydiv"></div>
-    <div id="mydiv2"></div>
+    <div id="mydiv">1</div>
+    <div id="mydiv2">2</div>
 
     <button id="mybtn">SET</button>
 
@@ -18,9 +18,10 @@
         $(document).ready(function(){
             $("#mybtn").click(function(){
 
-                $("#myinp").val("HELLO");
-                $("#mydiv").html("It's <b>Div</b> Tag");
-                $("#mydiv2").text("It's <b>Div</b> Tag");
+                // $("#myinp").val("HELLO");
+                // $("#mydiv").html("It's <b>Div</b> Tag");
+                // $("#mydiv2").text("It's <b>Div</b> Tag");
+                $("div:second").hide();
             })
         })
     </script>

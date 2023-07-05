@@ -79,17 +79,47 @@
 }
 
 .gh-main{
-    display: none;
+    /* display: none;     */
+    background-color: red;
 }
+
+.gold-A{
+    background-color: aquamarine;
+}
+
+.img-main{
+border: 1px solid black;}
 
 .show{
     display: block;
 }
 
 .gh-mainB{
-    height: 200px;
+    height: 400px;
     width: 100%;
-    background-color: red;
+}
+
+.img-mainB img{
+    width: 50%;
+}
+
+.img-mainC{
+    height: 400px;
+    width: 369px;
+    background-color: yellow;
+    overflow: hidden ;
+}
+
+.img-mainC img{
+    height: 100%;
+    width: 100%;
+}
+
+.kjl:hover{
+    transform: scale(1.1,1.1);
+}
+.gold-B{
+    background-color: yellowgreen;
 }
 
 .sh-main{
