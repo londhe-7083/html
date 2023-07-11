@@ -52,6 +52,11 @@
 
 #mybtn{
     cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#mycont{
+    transition-duration: 0.4s;
 }
  
 .mrl-8{
@@ -79,7 +84,7 @@
 }
 
 .gh-main{
-    /* display: none;     */
+    display: none;    
     background-color: red;
 }
 
@@ -94,7 +99,7 @@ border: 1px solid black;}
     display: block;
 }
 
-.gh-mainB{
+.gh-mainB .sh-mainB{
     height: 400px;
     width: 100%;
 }
@@ -108,15 +113,20 @@ border: 1px solid black;}
     width: 369px;
     background-color: yellow;
     overflow: hidden ;
+    transition-duration:0.4s;
 }
 
 .img-mainC img{
     height: 100%;
     width: 100%;
+    transition-duration:0.4s;
+
 }
 
 .kjl:hover{
     transform: scale(1.1,1.1);
+    box-shadow: 0px 0px 5px 0px grey;
+
 }
 .gold-B{
     background-color: yellowgreen;
@@ -130,11 +140,6 @@ border: 1px solid black;}
     display: block;
 }
 
-.sh-mainB{
-    height: 200px;
-    width: 100%;
-    background-color: blue;
-}
 
 .oh-main{
     display: none;
@@ -147,8 +152,87 @@ border: 1px solid black;}
     display: block;
 }
 
-.oh-mainB{
-    height: 200px;
+.img-hw{
+    height: 190px;
+    width: 176vw;
+    background-color: blue;
+    overflow: hidden;
+}
+.img-hw img{
+    height: 100%;
     width: 100%;
-    background-color: palevioletred;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px 0px grey;
+}
+
+.img-hw img:hover{
+    transform:scale(1.2,1.2);
+}
+
+.border-tlr{
+    border-top-left-radius: 40px;
+}
+
+.border-blr{
+    border-bottom-left-radius: 40px;
+}
+
+.border-trr{
+    border-top-right-radius: 40px;
+}
+
+.border-brr{
+    border-bottom-right-radius: 40px;
+}
+
+.border-nan{
+    border: none;
+}
+
+.gold-C{
+    background-color: #f9f9f9;
+}
+
+.simg-hw{
+    height: 190px;
+    width: 180px;
+    overflow: hidden;
+}
+
+.b-radi{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+
+.b-radiB{
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.simg-hw img{
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.4s;
+}
+
+.simg-hw img:hover{
+    transform: scale(1.2,1.2);
+}
+
+.simg-hwB{
+    height: 390px;
+    overflow: hidden;
+}
+
+.simg-hwB img{
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.4s;
+    border-bottom-left-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+}
+
+.simg-hwB img:hover{
+    transform: scale(1.2,1.2) ;
 }

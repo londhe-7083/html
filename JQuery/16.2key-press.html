@@ -17,12 +17,39 @@
     <button class="g G">G</button>
     <button class="ArrowLeft"><</button>
     <button class="ArrowRight">></button>
+    <button class="ArrowUp">^</button>
+    <button class="ArrowDown">^</button>
+    <button class="h H">h</button>
+    <button class="i I">i</button>
+    <button class="j J">j</button>
+    <button class="k K">k</button>
+    <button class="l L">l</button>
+    <button class="m M">m</button>
+    <button class="n N">n</button>
+    <button class="o O">o</button>
+    <button class="p P">p</button>
+    <button class="q Q">q</button>
+    <button class="r R">r</button>
+    <button class="s S">s</button>
+    <button class="t T">t</button>
+    <button class="u U">u</button>
+    <button class="v V">v</button>
+    <button class="w W">w</button>
+    <button class="x X">x</button>
+    <button class="y Y">y</button>
+    <button class="z Z">z</button>
+    <button class="Alt">alter</button>
+    <button class="Tab">tab</button>
+    <button class="Control">Control</button>
+    <button class="Backspace">backspace</button>
+    <button class="CapsLock">capslock</button>
+    <button class="Shift">shift</button>
     
     <script>  
         $(document).ready(function(){
             $("body").keyup(function(event){
 
-                // console.log($("#myinp").val());
+                console.log($("#myinp").val());
                 console.log(event.key);
 
                 $("." +event.key).css({'background-color':'red'});
