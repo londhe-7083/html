@@ -83,9 +83,33 @@
     transform: scale(1.1);
 }
 
+.tod-rateA{
+    height: 14vw;
+    width: 13vw;
+    padding: 10px;
+    color: red;
+    border: 2px solid black;
+    background-color: #f9f9f9;
+    display: none;
+    position: absolute;
+    z-index: 4;
+    margin-top: 36px;
+    margin-left: -70px;
+}
+
+.show-rate{
+    display: block;
+}
+
+
 .gh-main{
     display: none;    
-    background-color: red;
+}
+
+.show{
+    display: block;
+    position: absolute;
+    z-index: 20;
 }
 
 .gold-A{
@@ -95,9 +119,7 @@
 .img-main{
 border: 1px solid black;}
 
-.show{
-    display: block;
-}
+
 
 .gh-mainB .sh-mainB{
     height: 400px;
@@ -120,7 +142,6 @@ border: 1px solid black;}
     height: 100%;
     width: 100%;
     transition-duration:0.4s;
-
 }
 
 .kjl:hover{
@@ -138,18 +159,35 @@ border: 1px solid black;}
 
 .show-sil{
     display: block;
+    position: absolute;
+    z-index: 20;
 }
 
 
 .oh-main{
     display: none;
 }
-.oh-mainn{
-    display: none;
+
+.offer-main{
+    display: flex;
+    justify-content: end;
+    margin-left: 58vw;
+    margin-top: -17px;
+}
+
+.offer{
+    height: 16vw;
+    width: 19vw;
+    border: 2px solid red;
+    padding: 8px;
+    color: blue;
+    background-color: #f9f9f9;
 }
 
 .show-offr{
     display: block;
+    position: absolute;
+    z-index: 12;
 }
 
 .img-hw{
@@ -236,3 +274,4 @@ border: 1px solid black;}
 .simg-hwB img:hover{
     transform: scale(1.2,1.2) ;
 }
+
