@@ -275,3 +275,15 @@ border: 1px solid black;}
     transform: scale(1.2,1.2) ;
 }
 
+.follow{
+    margin-left: 30px;
+}
+ 
+.follow h5{
+    line-height: 6px !important;
+}
+
+.inner-futter{
+    height: 400px;
+    background-color: black;
+}
