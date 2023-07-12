@@ -287,3 +287,50 @@ border: 1px solid black;}
     height: 400px;
     background-color: black;
 }
+
+.pt{
+    padding-top: 80px;
+}
+
+.Diamond{
+   background-image: url("https://static.wixstatic.com/media/111d6f_9f73246a12c44813900e9c60d072fd2b~mv2.gif");
+}
+
+.rate{
+    display: none;
+    visibility: hidden;
+}
+
+@media(max-width:767px){
+    .main-header{
+        display: none;
+        visibility: hidden;
+    }
+   
+    .rate{
+        display: block;
+        visibility:visible;
+        width: 95px;
+        font-size: 10px;
+    }
+
+    .rater{
+        position: relative;
+        left: 56vw;
+        top: 10px;
+    }
+
+    .mt{
+       margin-top: -25px;
+    }
+
+    .sign{
+        position: relative;
+        left: 26vw;
+    }
+
+    .dis-nn{
+        display: none;
+        visibility: hidden;
+    }
+}
