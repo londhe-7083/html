@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunction()">Insert</button>
+    <h2 id="myh2">My header</h2>
+    <script>
+        function myfunction(){
+            const h2 = document.getElementById("myh2");
+            let text= "hello myname";
+            h2.insertAdjacentText("afterbegin",text);
+        }
+    </script>
+    
+</body>
+</html>

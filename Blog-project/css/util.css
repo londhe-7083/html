@@ -26,6 +26,11 @@
     margin: auto;
 }
 
+.my-2{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 .btn{
     padding: 0px 15px;
     padding-top: 3px;

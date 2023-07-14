@@ -10,29 +10,29 @@
     <h1> the element object</h1>
     <h1>the append child method</h1>
 
-    <ul id="my list">
+    <ul id="my-list">
         <li> coffee</li>
         <li> tea </li>
     </ul>
-    <button onclick="myfucntion()">Append</button>
+    <button onclick="myfunction()">Append</button>
 
     <script>
         // create an list node
 
-        function myfucntion(){             
+        function myfunction(){             
             //create a "li" node
-            const node = document .createElement('water');
+            const node = document .createElement('li');
             
             //create a text node
             const textnode = document .createTextNode('water');
 
             //append the last node to the "li" node
-
+ 
             node.appendChild(textnode);
 
             //append the "li" node to the list
 
-            document.getElementById("myist").appendChild(node);
+            document.getElementById("my-list").appendChild(node);
 
         }
     </script>

@@ -4,23 +4,29 @@
 }
 
 .navigation {
+    margin-top: 25px;
     font-family: var(--font1);
     height: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: red;
 }
 
 .nav-left {
-    font-size: 27px;
     display: flex;
 }
+
+.nav-left span{
+    font-size: 30px;
+}
+
 
 .nav-left ul {
     display: flex;
     align-items: center;
     margin: 0 77px;
-    font-size: 18px;
+    font-size: 21px;
 }
 
 .nav-left ul li {
@@ -44,9 +50,19 @@
 .content {
     display: flex;
     height: 295px;
-    background-color: rgb(166, 216, 214);
+    /* background-color: rgb(166, 216, 214); */
     padding: 10px;
     margin-top: 20px;
+    position: relative;
+}
+
+.content::after{
+    content: "";
+    background-image: url("../img/vecteezy_vector-illustration-of-fingers-typing-on-a-laptop_7414839.jpg");
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
 }
 
 .content-left {
