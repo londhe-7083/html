@@ -300,3 +300,54 @@ header .fa-bars{
     color: #555;
     font-size: 1.3rem;
 }
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem  rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+
+.products .box-container .box .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    color: var(--pink);
+    background: rgba(255,  51, 153, .05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.image2{
+    height: 50vh;
+    margin-left: 85px;
+    overflow: hidden;
+}
+
+.image2 img{
+    height: 100%;
+    width: 100%;
+} 
