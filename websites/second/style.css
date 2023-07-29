@@ -84,10 +84,15 @@ header .navbar a:hover{
     color:var(--pink);
 }
 
+.header a{
+text-decoration: none;
+}
+
 header .icons a{
     font-size: 1.5rem;
     color: #333;
     margin-left: 1.5rem;
+    text-decoration: none;
 }
 
 header .icons a:hover{
@@ -108,81 +113,7 @@ header .fa-bars{
     display: none;
 }
 
-@media (max-width:991px){
 
-    html{font-size: 55%;}
-
-    header{padding: 2rem;}
-
-    section{padding: 2rem;}
-
-    .home{ background-position: left;}
-
-   
-}
-
-@media (max-width: 768px){
-     
-    html .fa-bars{
-        display: block;
-    }
-
-    header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header #toggler:checked ~ .navbar{
-
-        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
-
-    }
-
-    header .navbar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border: .1rem solid rgba(0,0,0,.1);
-        display: block;
-        width: 100%;
-    }
-
-    .home .content h3{
-        font-size: 5rem;
-    }
-
-    .home .content span{
-        font-size: 2.5rem;
-    }
-
-    .icons-container .icons h3{
-        font-size: 2rem;
-    }
-    
-    .icons-container .icons span{
-        font-size: 1.7rem;
-    }
-    
-    .icons-container{
-        flex: 1 1 48rem;
-    }
-}
-
-@media (max-width:450px) {
-    
-     html{
-        font-size: 50%;
-     }
-
-     .heading{
-        font-size: 3rem;
-     }
-}
 
 
 .home{
@@ -525,7 +456,7 @@ header .fa-bars{
 }
 
 .footer .box-container .box{
-    flex: 1 1 25rem;
+    flex: 1 1 23rem;
 }
 
 .footer .box-container .box h3{
@@ -539,6 +470,7 @@ header .fa-bars{
     color: #666;
     font-size: 1.5rem;
     padding: 1rem 0;
+    text-decoration: none;
 }
 
 .footer .box-container .box a:hover{
@@ -546,6 +478,19 @@ header .fa-bars{
     text-decoration: underline;
 }
 
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+.footer .credit span{
+    color: var(--pink);
+}
 
 
 
