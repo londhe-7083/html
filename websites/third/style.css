@@ -43,6 +43,21 @@ html::-webkit-scrollbar-thumb{
     background: var(--yellow);
 }
 
+.btn{
+    font-size: 1.7rem;
+    padding: .7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem 10%;
+    padding-top: 8.5rem;
+}
+
 header{
     position: fixed;
     top: 0; left: 0;
@@ -50,7 +65,7 @@ header{
     width: 100%;
     background: #fff;
     padding: 1.5rem 10%;
-    box-shadow: 0 .3rem  2rem rgba(0,0,0,.1,);
+    box-shadow: 0rem 0.3rem 2rem rgba(0,0,0,.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,6 +75,7 @@ header .logo img{
     height: 5rem;
 }
 
+
 header .navbar ul{
     display: flex;
     align-items: center;
@@ -68,17 +84,24 @@ header .navbar ul{
 }
 
 header .navbar ul li{
-    margin-left: 3rem;
+    margin: 1.5rem;
+    /* width: 100%; */
 }
 
 header .navbar ul li a{
     font-size: 1.7rem;
     color: #666;
+    /* display: block;
+    color: #fff;
+    padding-left: 2rem;
+    font-size: 2rem; */
+
 }
 
 header .navbar ul li a:active,
 header .navbar ul li a:hover{
     color: var(--yellow);
+  
 }
 
 header #menu-bar{
@@ -87,6 +110,62 @@ header #menu-bar{
     cursor: pointer;
     display: none;
 }
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    overflow:hidden;
+    }
+
+    .home::before,
+    .home::after{
+        content:'';
+        position:absolute;
+        top: 5rem;
+        background: var(--yellow);
+        border-radius: 3rem;
+        transform: rotate(-45de);
+        height: 40rem;
+        z-index:-2;
+        animation: animte;
+    }
+
+    .home  flex
+    .home .image{
+        flex: 1 1 39rem;
+    }
+
+    .home::before{
+        top: -7rem;
+        background: #fff;
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.1);
+        z-index: -1;
+    }
+    
+
+    .home .image img{
+        width: 100%;
+    }
+
+    .home .content{
+        flex: 1 1 39rem;
+    }
+
+    .home .content h3{ 
+        color: #333;
+        font-size: 6rem;
+    }
+
+    .home .content p{
+        color: #666;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
 
 
 
@@ -142,6 +221,7 @@ header #menu-bar{
         font-size: 55%;
     }
 
+    
     header #menu-bar{
         display: block;
     }
@@ -151,7 +231,8 @@ header #menu-bar{
         top: 8rem; left: 0;
         width: 100%;
         background: var(--yellow);
-        border-top: .2rem solid rgba(0,0,0,.1,);
+        border-top: .2rem solid rgba(0,0,0,.1);
+        
     }
 
     header .navbar ul{
@@ -178,4 +259,14 @@ header #menu-bar{
         color: #333;
         border-color: #333;
     }
+
+    .fa-times{
+        transform:rotate(180deg);
+    }
+
+      .nav-toggle{
+         transform:scaleY(0);
+        transform-origin: top;
+        opacity: 0; 
+      }
 }

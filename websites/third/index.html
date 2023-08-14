@@ -23,6 +23,13 @@
 
     <!-- custom js file link -->
     <script src="./script.js"> </script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+   
+
 </head>
 
 <body>
@@ -32,7 +39,7 @@
         <a href="#" class="logo"><img src="./images/serving.png" alt="" ></a>
 
         <i class="fa fa-burger" id="menu-bar"></i>
-        <nav class="navbar">
+        <nav class="navbar nav-toggle">
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
@@ -43,6 +50,32 @@
             </ul>
         </nav>
     </header>
+
+<!-- home section starts here -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>We belive good food offer great smile</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure incidunt nihil quos natus culpa necessitatibus quasi ducimus qui dolore neque?
+            </p>
+            <a href="#"><button class="btn">get started</button></a>
+        </div>
+
+        <div class="image">
+            <img src="./images/Lemon-Basil.webp" alt="">
+        </div>
+    </section>
+
+    <script>
+            $(document).ready(function(){    
+
+            $('#menu-bar').click(function(){
+                $(this).toggleClass('fa-times');
+                $('.navbar').toggleClass('nav-toggle');
+            });
+        })
+        </script>
 </body>
 
 </html>
