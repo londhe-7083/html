@@ -22,21 +22,21 @@
     <link rel="stylesheet" href="./style.css">
 
     <!-- custom js file link -->
-    <script src="./script.js"> </script>
+    <!-- <script src="./script.js"> </script> -->
 
 
 
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-   
+
 
 </head>
 
 <body>
-<!-- header section start here -->
+    <!-- header section start here -->
     <header>
 
-        <a href="#" class="logo"><img src="./images/serving.png" alt="" ></a>
+        <a href="#" class="logo"><img src="./images/serving.png" alt=""></a>
 
         <i class="fa fa-burger" id="menu-bar"></i>
         <nav class="navbar nav-toggle">
@@ -51,13 +51,14 @@
         </nav>
     </header>
 
-<!-- home section starts here -->
+    <!-- home section starts here -->
 
     <section class="home" id="home">
         <div class="content">
             <h3>We belive good food offer great smile</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure incidunt nihil quos natus culpa necessitatibus quasi ducimus qui dolore neque?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure incidunt nihil quos natus culpa
+                necessitatibus quasi ducimus qui dolore neque?
             </p>
             <a href="#"><button class="btn">get started</button></a>
         </div>
@@ -67,22 +68,24 @@
         </div>
     </section>
 
-<!-- about section starts here -->
+    <!-- about section starts here -->
     <section class="about" id="about">
         <div class="image"></div>
 
         <div class="content">
             <h3>a word about us</h3>
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati veniam a beatae nisi, distinctio molestias harum provident velit vitae fuga! Accusantium, consequatur corrupti aperiam eligendi</p>
-                <p>tenetur ratione debitis architecto dolore porro, illo, iure laudantium quisquam est. Ad, fugit, laudantium nisi autem voluptates, dolor hic numquam facere dicta quibusdam accusantium?
-                </p>
-                <a href="#"><button class="btn">learn more</button></a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati veniam a beatae nisi, distinctio
+                molestias harum provident velit vitae fuga! Accusantium, consequatur corrupti aperiam eligendi</p>
+            <p>tenetur ratione debitis architecto dolore porro, illo, iure laudantium quisquam est. Ad, fugit,
+                laudantium nisi autem voluptates, dolor hic numquam facere dicta quibusdam accusantium?
+            </p>
+            <a href="#"><button class="btn">learn more</button></a>
         </div>
     </section>
 
-<!-- about section ends -->
-     <section class="menu" id="menu">
+    <!-- menu section starts -->
+    <section class="menu" id="menu">
         <h1 class="heading">our delicious <span>menu</span></h1>
 
         <ul class="list">
@@ -94,39 +97,50 @@
 
         <div class="row">
             <div class="image">
-                <img src="./images/chicken-sandwich.jpg" id="menu-img" alt="" ></img>
+                <img src="./images/tawook-chicken-sandwich-7414558_1280.jpg" id="menu-img" alt="" height="400px"></img>
             </div>
 
             <div class="content">
                 <div class="info">
                     <h3> <span>01.</span>we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur  elit. Pariatur  minus ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Pariatur minus ipsa?</p>
                 </div>
                 <div class="info">
                     <h3> <span>02.</span>we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur  elit. Pariatur  minus ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Pariatur minus ipsa?</p>
                 </div>
                 <div class="info">
                     <h3> <span>03.</span>we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur  elit. Pariatur  minus ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Pariatur minus ipsa?</p>
                 </div>
                 <div class="info">
                     <h3> <span>04.</span>we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur  elit. Pariatur  minus ipsa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur elit. Pariatur minus ipsa?</p>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
 
     <script>
-            $(document).ready(function(){    
+        $(document).ready(function () {
 
-            $('#menu-bar').click(function(){
+            $('#menu-bar').click(function () {
                 $(this).toggleClass('fa-times');
                 $('.navbar').toggleClass('nav-toggle');
             });
+
+            $(window).on('scroll load', function () {
+
+                $('#menu-bar').removeClass('fa-times');
+                $('.navbar').removeClass('nav-toggle');
+            });
+
+            $('.menu .list .btn').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            })
         })
-        </script>
+
+    </script>
 </body>
 
 </html>
