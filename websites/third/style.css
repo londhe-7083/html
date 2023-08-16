@@ -69,7 +69,7 @@ section{
     border: .2rem solid var(--yellow);
 }
 
-.btn:hover{
+.active{
     background-color: var(--yellow);
 }
 
@@ -125,7 +125,7 @@ header .navbar ul li a{
 
 }
 
-header .navbar ul li a:active,
+header .navbar ul li a .active,
 header .navbar ul li a:hover{
     color: var(--yellow);
   
@@ -252,12 +252,12 @@ header #menu-bar{
     .menu .list .btn{
         margin: 1rem;
     }
- 
+/*  
     .menu .list .active,
     .menu .list .btn:hover{
         background-color: var(--yellow);
         color: #fff;
-    }
+    } */
 
     .menu .row{
         display: flex;
@@ -306,6 +306,33 @@ header #menu-bar{
         color: #666;
     }
 
+    .popular{
+        background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)), url() no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .popular .box-container .box{
+        background: #fff;
+        width: 35rem;
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 .3rem .5rem rgba(0,0,0,0.2);
+    }
+
+    .popular .box-container .box h3{
+        color-scheme: #333;
+        font-size: 3rem;
+        font-weight: normal;
+    }
+
+    .popular .box-container .box .stars i{
+        color: var(--yellow);
+        font-size: 2rem;
+        padding: 1rem .1rem;
+        }
 
 
 
@@ -375,8 +402,9 @@ header #menu-bar{
         top: 8rem; left: 0;
         width: 100%;
         background: var(--yellow);
-        border-top: .2rem solid rgba(0,0,0,.1);
-        
+        border-top: .2rem solid rgba(0,0,0,.1);       
+        transform:scaleY(0);
+        opacity: 0; 
     }
 
     header .navbar ul{
@@ -409,9 +437,9 @@ header #menu-bar{
     }
 
       .nav-toggle{
-         transform:scaleY(0);
-        transform-origin: top;
-        opacity: 0; 
+         transform:scaleY(1) !important;
+          opacity: 1 !important; 
+        
       }
 
      
@@ -432,10 +460,4 @@ header #menu-bar{
         font-size: 50%;
     }
 
-    .nav-toggle{
-        display: none;
-        transform:scaleY(0);
-       transform-origin: top;
-       opacity: 0; 
-     }
 }

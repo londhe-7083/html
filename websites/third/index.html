@@ -39,7 +39,7 @@
         <a href="#" class="logo"><img src="./images/serving.png" alt=""></a>
 
         <i class="fa fa-burger" id="menu-bar"></i>
-        <nav class="navbar nav-toggle">
+        <nav class="navbar">
             <ul>
                 <li><a href="#home">home</a></li>
                 <li><a href="#about">about</a></li>
@@ -89,13 +89,14 @@
         <h1 class="heading">our delicious <span>menu</span></h1>
 
         <ul class="list">
-            <li class="btn" data-src="">brakfast</li>
-            <li class="btn active" data-src="">lunch</li>
-            <li class="btn" data-src="">dinner</li>
-            <li class="btn" data-src="">dessert</li>
+            <li class="btn button" data-src="./images/hamburger-8009728_1280.jpg">brakfast</li>
+            <li class="btn button active" data-src="./images/tawook-chicken-sandwich-7414558_1280.jpg">lunch</li>
+            <li class="btn button" data-src="./images/chicken-1701200_1280.jpg">dinner</li>
+            <li class="btn button" data-src="./images/bread-1239274_1280.jpg">dessert</li>
         </ul>
 
         <div class="row">
+            
             <div class="image">
                 <img src="./images/tawook-chicken-sandwich-7414558_1280.jpg" id="menu-img" alt="" height="400px"></img>
             </div>
@@ -121,22 +122,86 @@
         </div>
     </section>
 
+    <!-- popular section starts -->
+
+    <section class="popular" id="popular">
+        <h1 class="heading">
+            <div class="box-container">
+                <div class="box">
+                    <img src="./images/item 1.jpg" height="200vw" alt="">
+                    <h3>delicious food</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$30.00</div>
+                    <a href="#"><button class="btn">add to cart</button></a>
+                </div>
+                <div class="box">
+                    <img src="./images/item 3.jpg" height="200vw" alt="">
+                    <h3>delicious food</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$30.00</div>
+                    <a href="#"><button class="btn">add to cart</button></a>
+                </div>
+                <div class="box">
+                    <img src="./images/item 3.jpg" height="200vw" alt="">
+                    <h3>delicious food</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$30.00</div>
+                    <a href="#"><button class="btn">add to cart</button></a>
+                </div>
+                <div class="box">
+                    <img src="./images/item 4.jpg" height="200vw"  alt="">
+                    <h3>delicious food</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$30.00</div>
+                    <a href="#"><button class="btn">add to cart</button></a>
+                </div>
+            </div>
+        </h1>
+    </section>
+
     <script>
         $(document).ready(function () {
 
             $('#menu-bar').click(function () {
-                $(this).toggleClass('fa-times');
                 $('.navbar').toggleClass('nav-toggle');
+                $(this).toggleClass('fa-times');
             });
 
             $(window).on('scroll load', function () {
-
                 $('#menu-bar').removeClass('fa-times');
                 $('.navbar').removeClass('nav-toggle');
             });
 
-            $('.menu .list .btn').click(function () {
+            $('.button').click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
+
+                let src = $(this).attr('data-src');
+
+                $('#menu-img').attr('src',src);
             })
         })
 
