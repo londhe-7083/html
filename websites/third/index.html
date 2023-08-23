@@ -24,12 +24,6 @@
     <!-- custom js file link -->
     <!-- <script src="./script.js"> </script> -->
 
-
-
-    <script src="https://code.jquery.com/jquery-3.7.0.js"
-        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-
-
 </head>
 
 <body>
@@ -54,7 +48,7 @@
     <!-- home section starts here -->
 
     <section class="home" id="home">
-        <div class="content">
+        <div class="content" data-aos="fade-right">
             <h3>We belive good food offer great smile</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure incidunt nihil quos natus culpa
@@ -63,16 +57,16 @@
             <a href="#"><button class="btn">get started</button></a>
         </div>
 
-        <div class="image">
+        <div class="image"  data-aos="fade-up">
             <img src="./images/Lemon-Basil.webp" alt="">
         </div>
     </section>
 
     <!-- about section starts here -->
-    <section class="about" id="about">
-        <div class="image"></div>
+    <section class="about" id="about" >
+        <div class="image"  data-aos="fade-right"></div>
 
-        <div class="content">
+        <div class="content"  data-aos="fade-left">
             <h3>a word about us</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati veniam a beatae nisi, distinctio
@@ -88,16 +82,16 @@
     <section class="menu" id="menu">
         <h1 class="heading">our delicious <span>menu</span></h1>
 
-        <ul class="list">
+        <ul class="list"  data-aos="fade-down">
             <li class="btn button" data-src="./images/hamburger-8009728_1280.jpg">brakfast</li>
             <li class="btn button active" data-src="./images/tawook-chicken-sandwich-7414558_1280.jpg">lunch</li>
             <li class="btn button" data-src="./images/chicken-1701200_1280.jpg">dinner</li>
             <li class="btn button" data-src="./images/bread-1239274_1280.jpg">dessert</li>
         </ul>
 
-        <div class="row">
-            
-            <div class="image">
+        <div class="row"  data-aos="fade-right">
+
+            <div class="image"  data-aos="fade-left"> 
                 <img src="./images/tawook-chicken-sandwich-7414558_1280.jpg" id="menu-img" alt="" height="400px"></img>
             </div>
 
@@ -126,98 +120,160 @@
 
     <section class="popular" id="popular">
         <h1 class="heading">Most <span>Popular</span> Foods </h1>
-            <div class="box-container">
-                <div class="box">
-                    <img src="./images/item 1.jpg" height="200vw" alt="">
-                    <h3>delicious food</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">$30.00</div>
-                    <a href="#"><button class="btn">add to cart</button></a>
+        <div class="box-container">
+            <div class="box"  data-aos="fade-up"  data-aos="fade-right">
+                <img src="./images/gallery 1.jpg" height="200vw" alt="">
+                <h3>delicious food</h3>
+                <div class="stars"  data-aos="fade-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <div class="box">
-                    <img src="./images/item 3.jpg" height="200vw" alt="">
-                    <h3>delicious food</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">$30.00</div>
-                    <a href="#"><button class="btn">add to cart</button></a>
-                </div>
-                <div class="box">
-                    <img src="./images/item 3.jpg" height="200vw" alt="">
-                    <h3>delicious food</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">$30.00</div>
-                    <a href="#"><button class="btn">add to cart</button></a>
-                </div>
-                <div class="box">
-                    <img src="./images/item 4.jpg" height="200vw"  alt="">
-                    <h3>delicious food</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">$30.00</div>
-                    <a href="#"><button class="btn">add to cart</button></a>
-                </div>
+                <div class="price">$30.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
             </div>
+            <div class="box"  data-aos="fade-up"  data-aos="fade-left">
+                <img src="./images/item 3.jpg" height="200vw" alt="">
+                <h3>delicious food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$30.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+            <div class="box"  data-aos="fade-up"  data-aos="fade-right">
+                <img src="./images/item 3.jpg" height="200vw" alt="">
+                <h3>delicious food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$30.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+            <div class="box"  data-aos="fade-up"  data-aos="fade-left>
+                <img src="./images/item 4.jpg" height="200vw" alt="">
+                <h3>delicious food</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$30.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+        </div>
         </h1>
     </section>
 
     <!-- popular section ends -->
-    
+
+    <!-- gallery section starts -->
     <section class="gallery" id="gallery">
 
         <h1 class="heading">our food <span>gallery</span> </h1>
 
-     <div class="box-container">
-        <div class="box">
-            <img src="images/gallery 1.jpg">
-            <h3>delecious food</h3>
+        <div class="box-container">
+            <div class="box"  data-aos="fade-up">
+                <img src="images/gallery 1.jpg">
+                <h3>delecious food</h3>
+            </div>
+            <div class="box"  data-aos="fade-up">
+                <img src="images/gallery 3.jpg">
+                <h3>delecious food</h3>
+            </div>
+            <div class="box"  data-aos="fade-up">
+                <img src="images/gallery 3.jpg">
+                <h3>delecious food</h3>
+            </div>
+            <div class="box"  data-aos="fade-up">
+                <img src="images/gallery 1.jpg">
+                <h3>delecious food</h3>
+            </div>
+            <div class="box"  data-aos="fade-up">
+                <img src="images/gallery 3.jpg">
+                <h3>delecious food</h3>
+            </div>
+            <div class="box"  data-aos="fade-up">
+                <img src="images/gallery 1.jpg">
+                <h3>delecious food</h3>
+            </div>
         </div>
-        <div class="box">
-            <img src="images/gallery 3.jpg">
-            <h3>delecious food</h3>
-        </div>
-        <div class="box">
-            <img src="images/gallery 3.jpg">
-            <h3>delecious food</h3>
-        </div>
-        <div class="box">
-            <img src="images/gallery 1.jpg">
-            <h3>delecious food</h3>
-        </div>
-        <div class="box">
-            <img src="images/gallery 3.jpg">
-            <h3>delecious food</h3>
-        </div>
-        <div class="box">
-            <img src="images/gallery 1.jpg">
-            <h3>delecious food</h3>
-        </div>
-    </div>
     </section>
 
+    <!-- order section starts -->
+    <section class="order" id="order">
 
+        <h1 class="heading">make an <span>order</span></h1>
+
+        <div class="row">
+
+            <form action=""  data-aos="fade-right">
+                <input type="text" placeholder="your name" class="box">
+                <input type="email" placeholder="your email" class="box">
+                <input type="password" placeholder="password" class="box">
+                <input type="number" placeholder="your number" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
+                <input type="submit" value="order now" class="btn">
+            </form>
+
+            <div class="image"  data-aos="fade-left">
+                <img src="images/cake pestie.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section starts -->
+    <div class="footer">
+        <div class="box-container">
+            <div class="box"  data-aos="fade-up">
+                 <h3>contact info</h3>
+                <P> <i class="fas fa-map-maker-alt"> </i> shrirampur, indai 413715</P>
+                <p> <i class="fas fa-envelope"></i> example@gmail.com</p>
+                <p> <i class="fas fa-phone"></i> +123-825-456</p>
+                <p> <i class="fas fa-phone"></i> +982-746-456</p>
+            </div>
+
+            <div class="box"  data-aos="fade-up">
+                <h3>branch location</h3>
+                <a href="#">indore</a>
+                <a href="#">haidrabad</a>
+                <a href="#">mumbai</a>
+                <a href="#">pune</a>
+                <a href="#">delhi</a>
+            </div>
+
+            <div class="box"  data-aos="fade-up">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">menu</a>
+                <a href="#">gallery</a>
+                <a href="#">order</a>
+            </div>
+
+            <div class="box"  data-aos="fade-up">
+                <h3>follow us</h3>
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">linedin</a>
+            </div>
+        </div>
+
+        <h2 class="credit">created by <a href="#">Shubh londhe </a>all rights reserved.</h2>
+    </div>
 
     <script>
         $(document).ready(function () {
@@ -237,11 +293,26 @@
 
                 let src = $(this).attr('data-src');
 
-                $('#menu-img').attr('src',src);
+                $('#menu-img').attr('src', src);
             })
         })
-
     </script>
+
+      <!-- aos js cdn link -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+      <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!-- initializing aos -->
+    <script>
+        AOS.init({
+            delay:400,
+            duration:1000
+        })
+    </script>
+
 </body>
 
 </html>
