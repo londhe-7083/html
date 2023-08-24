@@ -52,6 +52,11 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
 }
 
+.btn:hover{
+    background-color: var(--yellow);
+    color: #fff;
+}
+
 section{
     min-height: 100vh;
     padding: 1rem 10%;
@@ -76,7 +81,7 @@ section{
 .heading{
     text-align: center;
     font-size: 4rem;
-    padding: 0.5rem;
+    padding:0 .5rem;
     color: #333;
 }
 
@@ -243,8 +248,8 @@ header #menu-bar{
         justify-content: center;
         flex-wrap: wrap;
         list-style: none;
-        padding: 1rem 0;
-        margin: 2rem 0;
+        padding:1rem 0;
+        margin:2rem 0;
         border-top: .3rem dashed rgba(0,0,0,0.2);
         border-bottom: .3rem dashed rgba(0,0,0,0.2);
     }

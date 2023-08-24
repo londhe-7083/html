@@ -13,6 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap"
         rel="stylesheet">
 
+        <!-- aos cdn css link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <!-- font awesome cdn -->
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
@@ -134,7 +136,20 @@
                 <div class="price">$30.00</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box"  data-aos="fade-up"  data-aos="fade-left">
+            <div class="box" data-aos="fade-left">
+                <img src="./images/item 3.jpg" height="200vw" alt="">
+                <h3>delicious food</h3>
+                <div class="stars" >
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">$30.00</div>
+                <a href="#"><button class="btn">add to cart</button></a>
+            </div>
+            <div class="box" data-aos="fade-right">
                 <img src="./images/item 3.jpg" height="200vw" alt="">
                 <h3>delicious food</h3>
                 <div class="stars">
@@ -147,21 +162,8 @@
                 <div class="price">$30.00</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box"  data-aos="fade-up"  data-aos="fade-right">
-                <img src="./images/item 3.jpg" height="200vw" alt="">
-                <h3>delicious food</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$30.00</div>
-                <a href="#"><button class="btn">add to cart</button></a>
-            </div>
-            <div class="box"  data-aos="fade-up"  data-aos="fade-left>
-                <img src="./images/item 4.jpg" height="200vw" alt="">
+            <div class="box"   data-aos="fade-left">
+                <img src="images/item 4.jpg" height="200vw" alt="">
                 <h3>delicious food</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -237,7 +239,7 @@
     <!-- footer section starts -->
     <div class="footer">
         <div class="box-container">
-            <div class="box"  data-aos="fade-up">
+            <div class="box">
                  <h3>contact info</h3>
                 <P> <i class="fas fa-map-maker-alt"> </i> shrirampur, indai 413715</P>
                 <p> <i class="fas fa-envelope"></i> example@gmail.com</p>
@@ -245,7 +247,7 @@
                 <p> <i class="fas fa-phone"></i> +982-746-456</p>
             </div>
 
-            <div class="box"  data-aos="fade-up">
+            <div class="box">
                 <h3>branch location</h3>
                 <a href="#">indore</a>
                 <a href="#">haidrabad</a>
@@ -254,7 +256,7 @@
                 <a href="#">delhi</a>
             </div>
 
-            <div class="box"  data-aos="fade-up">
+            <div class="box">
                 <h3>quick links</h3>
                 <a href="#">home</a>
                 <a href="#">about</a>
@@ -263,32 +265,48 @@
                 <a href="#">order</a>
             </div>
 
-            <div class="box"  data-aos="fade-up">
-                <h3>follow us</h3>
-                <a href="#">instagram</a>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">linedin</a>
-            </div>
+           <div class="box">
+            <h3>quick links</h3>
+            <a href="#">instagram</a>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+           </div>
         </div>
 
         <h2 class="credit">created by <a href="#">Shubh londhe </a>all rights reserved.</h2>
     </div>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function(){
 
-            $('#menu-bar').click(function () {
+            $('#menu-bar').click(function(){
                 $('.navbar').toggleClass('nav-toggle');
                 $(this).toggleClass('fa-times');
             });
 
-            $(window).on('scroll load', function () {
+            $(window).on('scroll load', function(){
+                
                 $('#menu-bar').removeClass('fa-times');
                 $('.navbar').removeClass('nav-toggle');
+
+                // scroll spy
+
+                $('section').each(function(){
+
+                    let top = $(window).scrollTop();
+                    let offset = $(this).offset().top - 200;
+                    let height = $(this).height();
+                    let id = $(this).attr('id');
+
+                    if(top > offset && top < offset + height){
+                        $('.navbar ul li a').removeClass('active');
+                        $('.navbar').find(`[href="#${id}"]`).addClass('active');
+                    }
+                })
             });
 
-            $('.button').click(function () {
+            $('.button') .click(function(){
                 $(this).addClass('active').siblings().removeClass('active');
 
                 let src = $(this).attr('data-src');
