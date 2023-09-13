@@ -10,10 +10,10 @@
 <script>
 const cars = ["BMW", "Volvo", "Mini"];
 
-let text = "";
-for (let x in cars) {
-  text += cars[x] + "<br>";
-// document.write(x);
+let text = " ";
+for (let x of cars) {
+  // text += x + "<br>";
+document.write(x+"<br>" );
 }
 
 document.getElementById("demo").innerHTML = text;
