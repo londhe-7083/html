@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box animation</title>
+    <style>
+        #menu{
+            background-color: red;
+            height: 100vh;
+            width: 300px;
+            position: fixed;
+        }
+
+        #menubtn{
+            position: absolute;
+            left: 0px; top: 10px;
+            transform: translateX(-100);
+        }
+    </style>
+</head>
+<body>
+     <div id="menu">
+        <button id="menubtn">OPEN</button>
+     </div>
+
+     <script>
+        $(document).ready(function(){
+            $('menubtn').click(function(){
+                $("menu").animate({'right':'0px'});
+            })
+        })
+     </script>
+
+</body>
+</html>

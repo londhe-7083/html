@@ -18,15 +18,17 @@
         <input type="number" id="mobile" onfocus="focus3()"><br><br>
 
         <label>Subject:</label>
-        <select id="sub" onfocus="chang()">
+        <select id="sub" onchange="chang()">
             <option>HTML</option>
             <option>CSS</option>
             <option>JS</option>
         </select><br><br>
+        <button>Save</button>
+
     </form>
     <script>
         function chang() {
-            doument.getElementById('sub').style="background-color:red";
+            document.getElementById('sub').style="background:red"
         }
 
         function focus1(){

@@ -8,8 +8,8 @@
     
     <script>
         function PressButton(buttonvalue){
-            console.log (buttonvalue)
-            let caltext=document.querySelector(".input-screen").value +buttonvalue +"";
+            // console.log (buttonvalue)
+            let caltext=document.querySelector(".input-screen").value + buttonvalue +"";
             document.querySelector(".input-screen").value = caltext;
         }
 
@@ -72,7 +72,8 @@
     <div class="mainA">
     <div class="mainB">
         <input type="text" class="input-screen" >
-         <div class="num">
+
+        <div class="num">
             <div class="no5">
                 <button  OnClick="clearscreen('AC')">AC</button>
                 <button  OnClick="PressButton('DEL')">DEL</button>
