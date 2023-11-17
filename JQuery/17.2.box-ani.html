@@ -6,7 +6,21 @@
     <title>Moving box</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    
+
+    <style>
+        #mydiv{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            /* position: absolute; */
+            left: 0px;
+            top: 0px;
+        }
+
+        #mybtn{
+            margin-top: 14px;
+        }
+    </style>
 </head>
 <body>
     <div id="mydiv">Hello</div>
@@ -16,9 +30,10 @@
         $(document).ready(function(){
             $("#mybtn").click(function(){
                 setInterval(function(){
-                    $("#mydiv").animate({"top":"100px"});
-                })
-            })
+                    $("#mydiv").animate({"margin-top":"100px"});
+                    $("#mydiv").animate({"margin-left":"1000px"});
+                },1000)
+            });
         })
     </script>
 </body>
