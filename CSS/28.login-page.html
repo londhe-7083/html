@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login page</title>
     <script src="https://kit.fontawesome.com/5f59e0296b.js" crossorigin="anonymous"></script>
-    <link href="./28.login-page.css" rel="stylesheet">
+    <link href="./28.login-page.css" rel="  stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <div class="form-container sign-up">
             <form>
                 <h1>Create Account</h1>
@@ -24,6 +24,8 @@
                 <input type="password" placeholder="Password">
                 <button>Sign Up</button>
             </form>
+        </div>
+        <div class="form-container sign-in">
             <form>
                 <h1>Sign In</h1>
                 <div class="social-icons">
@@ -46,11 +48,7 @@
                     <P>Enter your personal details to use all of site features</P>
                     <button class="hidden" id="login">Sign in</button>
                 </div>
-            </div>
-        </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
+                <div class="toggle-panel toggle-right">
                     <h1>Hello, Friend!</h1>
                     <p>Register with your personal detail to use all of site features</p>
                     <button class="hidden" id="login">Sign in</button>
@@ -58,5 +56,6 @@
             </div>
         </div>
     </div>
+    <script src="./28.login-page.js"></script>
 </body>
 </html>

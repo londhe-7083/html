@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+nav{
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(124, 123, 123, 0.98);
+    padding: 0 3rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 0 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 600ms;
+}
+
+nav ul li a:hover{
+    color: rgb(31, 30, 30);
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.social-icons{
+    position: absolute;
+    right: 110px;
+}
+
+.social-icon {
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 600ms;
+}
+
+.social-icon:hover i {
+    transform:  scale(1.2);
+}
+
+.yt{
+    color: red;
+}
+
+.ig{
+    color: rgb(233, 66, 135);
+}
+
+.landing-page{
+    min-height: 100vh;
+    max-height: fit-content;
+    background: rgb(31, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sneaker-img--hero {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    background: white;
+    transition: 600ms;
+  }
