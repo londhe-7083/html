@@ -59,6 +59,7 @@ nav ul li a:hover{
 
 .ig{
     color: rgb(233, 66, 135);
+    
 }
 
 .landing-page{
@@ -76,4 +77,69 @@ nav ul li a:hover{
     object-fit: contain;
     background: white;
     transition: 600ms;
+  }
+
+  .landing-page--hero {
+      min-width: 40%;
+      height: 100vh;
+      background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    animation: fromRight 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+
+  .landing-page--hero:hover > .sneaker-img--hero {
+    transform: translate(10PX , 30PX) rotate(15deg);
+  }
+
+ .sneaker-shadow{
+    background: black;
+    height: 25px;
+    width: 60%;
+    border-radius: 50%;
+    filter: blur(10px);
+    opacity: 0.5;
+    transform: translateY(-10px);
+    transition: 600ms;
+ }
+
+  .landing-page--hero:hover > .sneaker-shadow {
+    transform: scale(1.1) translateY(-10px);
+  }
+
+  h1{ 
+    font-size: 2.5rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .landing-page--text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 500px;
+    color: white;
+    text-align: center;
+    text-overflow: wrap;
+    padding: 10px;
+  }
+
+
+  @keyframes fromRight{
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
   }
