@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear time</title>
+</head>
+<body>
+    <button onclick="mystop()">stop it</button>
+    <h2 id="demo"></h2>
+    <script>
+        const myTimeout = setTimeout(myGreeting,3000);
+
+        function myGreeting(){
+            document.getElementById("demo").innerHTML="Happy Birthday !";
+        }
+
+        function mystop(){
+            clearTimeout(myTimeout);
+        }
+    </script>
+</body>
+</html>
