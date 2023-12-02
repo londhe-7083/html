@@ -143,3 +143,53 @@ nav ul li a:hover{
         opacity: 1;
     }
   }
+
+.product-card--img{
+    width: 400px;
+    height: 500px;
+    object-fit: contain;
+    background: white;
+    border-radius: 5px;
+}
+
+.splash-img{
+    height: 500px;
+    width: 400px;
+    opacity: 0;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    transition: 600ms;
+}
+
+.product-section{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem;
+    height: 100vh;
+    background-image: url(src/wall.jpg);
+    
+}
+
+.product-card{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background: white;
+    padding-bottom: 50px;
+    z-index: 2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.product-card:hover{
+    transform: scale(1.05);
+}
+
