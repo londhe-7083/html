@@ -11,9 +11,9 @@
     float: left;
     background-color:rgb(0, 2, 128);
     /* position: relative; */
-    position: absolute;
+    /* position: absolute; */
     /* position: static; */
-    /* position: fixed; */
+    position: fixed;
 
 }
 
@@ -27,11 +27,11 @@
     height: 100px;
     width: 100%;
     float: left;
-    background-color: red;
+    background-color: rgb(0, 123, 255);
 }
 
 .top-main-menu{
-    position: sticky;
+    /* position: sticky; */
     top: 0px;
     height: 100px;
     width: 100%;
@@ -42,5 +42,5 @@
 .menu-area{
     height: 1000px;
     width: 100%;
-    background-image:linear-gradient(red,green,brown) ;
+    background-image:linear-gradient(rgb(rgb(119, 128, 0)255, 0),rgb(0,rgb(42, 46, 165) 128),brown) ;
 }
